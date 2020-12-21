@@ -1,3 +1,4 @@
 # local OS config dirs to be ignored on master branch
 **/darwin
 **/ubuntu
+**/nvim
