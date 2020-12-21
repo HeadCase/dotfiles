@@ -1,0 +1,63 @@
+# Need config to automate ssh-agents
+
+Host muir-wall
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	IdentityFile ~/.ssh/bastion
+	Hostname muir-wall
+
+
+Host muir-ext
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	Hostname muir-wall
+	IdentityFile ~/.ssh/bastion
+	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
+
+Host fourier
+  UseKeychain yes
+ 	Hostname bionic-fourier
+ 	IdentityFile ~/.ssh/bastion
+
+Host fourier-ext
+  User gheadley
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	Hostname bionic-fourier
+	IdentityFile ~/.ssh/bastion
+	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
+
+Host unifi
+  UseKeychain yes
+ 	Hostname xenial-unifi
+ 	IdentityFile ~/.ssh/bastion
+
+Host unifi-ext
+  User gheadley
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	Hostname xenial-unifi
+	IdentityFile ~/.ssh/bastion
+	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
+
+Host bastion
+	UseKeychain yes
+	AddKeysToAgent yes
+	Hostname bionic-bastion
+	User lynn
+	IdentityFile ~/.ssh/bastion
+	Port 231
+	ForwardAgent yes
+
+Host bastion-ext
+	UseKeychain yes
+	AddKeysToAgent yes
+	Hostname gheadley.dyndns.org
+	User lynn
+	IdentityFile ~/.ssh/bastion
+	Port 231
+	ForwardAgent yes
