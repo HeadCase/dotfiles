@@ -3,10 +3,17 @@
       create: true
       relink: true
 
-- clean: ['~','~/.config']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.ssh/config: ssh/config
+    ~/.config/nvim: nvim
+    ~/.alias: alias
+    ~/.tmux: alias
+    ~/.tmux.conf: tmux/tmuxline.conf
+    ~/.zshrc: zsh/zshrc
+    ~/.zshprofile: zsh/zprofile
+    ~/.oh-my-zsh/themes/spaceship.zsh-theme: zsh/plugins/spaceship-prompt/spaceship.zsh
 
 - shell:
   - git submodule sync --recursive
