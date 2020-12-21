@@ -8,6 +8,8 @@
 - link:
     ~/.config/nvim: nvim
     ~/.alias: alias
+    ~/.zshrc: zsh/zshrc
+    ~/.zshprofile: zsh/zprofile
 
 - shell:
   - git submodule sync --recursive
