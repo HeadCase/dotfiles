@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/nvim: nvim
+
+- shell:
+  - git submodule sync --recursive
+  - git submodule update --init --recursive
