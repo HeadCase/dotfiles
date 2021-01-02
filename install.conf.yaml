@@ -9,6 +9,7 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/bastion: keys/bastion
     ~/.config/nvim: nvim
+    ~/.vim: nvim
     ~/.alias: alias
     ~/.tmux: 
     ~/.tmux.conf: tmux/tmux.conf
