@@ -17,3 +17,54 @@
 [submodule "tmux/plugins/tmux-colors-solarized"]
 	path = tmux/plugins/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized
+[submodule "nvim/plugged/ale"]
+	path = nvim/plugged/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "nvim/plugged/ctrlp.vim"]
+	path = nvim/plugged/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "nvim/plugged/deoplete-jedi"]
+	path = nvim/plugged/deoplete-jedi
+	url = https://github.com/deoplete-plugins/deoplete-jedi
+[submodule "nvim/plugged/deoplete.nvim"]
+	path = nvim/plugged/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule "nvim/plugged/float-preview.nvim"]
+	path = nvim/plugged/float-preview.nvim
+	url = https://github.com/ncm2/float-preview.nvim
+[submodule "nvim/plugged/iron.nvim"]
+	path = nvim/plugged/iron.nvim
+	url = https://github.com/hkupty/iron.nvim
+[submodule "nvim/plugged/nerdtree"]
+	path = nvim/plugged/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "nvim/plugged/SimpylFold"]
+	path = nvim/plugged/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold
+[submodule "nvim/plugged/tabular"]
+	path = nvim/plugged/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "nvim/plugged/tmuxline.vim"]
+	path = nvim/plugged/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim
+[submodule "nvim/plugged/ultisnips"]
+	path = nvim/plugged/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "nvim/plugged/vim-auto-save"]
+	path = nvim/plugged/vim-auto-save
+	url = https://github.com/907th/vim-auto-save
+[submodule "nvim/plugged/vim-commentary"]
+	path = nvim/plugged/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "nvim/plugged/vim-repeat"]
+	path = nvim/plugged/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "nvim/plugged/vim-solarized8"]
+	path = nvim/plugged/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8
+[submodule "nvim/plugged/vim-surround"]
+	path = nvim/plugged/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "nvim/plugged/vimtex"]
+	path = nvim/plugged/vimtex
+	url = https://github.com/lervag/vimtex
