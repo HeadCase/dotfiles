@@ -10,8 +10,8 @@
     ~/.ssh/bastion: keys/bastion
     ~/.config/nvim: nvim
     ~/.alias: alias
-    ~/.tmux: alias
-    ~/.tmux.conf: tmux/tmuxline.conf
+    ~/.tmux: 
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc
     ~/.zshprofile: zsh/zprofile
     ~/.oh-my-zsh/themes/spaceship.zsh-theme: zsh/plugins/spaceship-prompt/spaceship.zsh
