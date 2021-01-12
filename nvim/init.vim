@@ -94,6 +94,10 @@ let g:auto_save_events = ["InsertLeave"]
 "   au FileType tex,asciidoc let b:auto_save = 1
 " augroup END
 
+
+" vim-ripple
+let g:ripple_winpos = 'vertical bo'
+
 "
 " ctrlp
 let g:ctrlp_working_path_mode = 'a'
