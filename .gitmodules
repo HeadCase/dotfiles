@@ -66,3 +66,9 @@
 [submodule "zsh/plugins/spaceship-prompt"]
 	path = zsh/plugins/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt
+[submodule "tmux/plugins/tmux-resurrect"]
+	path = tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
