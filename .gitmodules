@@ -20,9 +20,6 @@
 [submodule "nvim/plugged/ale"]
 	path = nvim/plugged/ale
 	url = https://github.com/dense-analysis/ale
-[submodule "nvim/plugged/ctrlp.vim"]
-	path = nvim/plugged/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
 [submodule "nvim/plugged/deoplete-jedi"]
 	path = nvim/plugged/deoplete-jedi
 	url = https://github.com/deoplete-plugins/deoplete-jedi
