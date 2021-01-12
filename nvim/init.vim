@@ -24,7 +24,7 @@ Plug 'honza/vim-snippets'
 Plug '907th/vim-auto-save'
 
 " Language support
-Plug 'hkupty/iron.nvim'
+Plug 'urbainvaes/vim-ripple'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/simpylfold'
 
