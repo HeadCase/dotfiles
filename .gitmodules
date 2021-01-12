@@ -72,3 +72,12 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "nvim/plugged/vim-snippets"]
+	path = nvim/plugged/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "nvim/plugged/vim-airline"]
+	path = nvim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "nvim/plugged/vim-airline-themes"]
+	path = nvim/plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
