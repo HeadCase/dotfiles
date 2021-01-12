@@ -7,8 +7,7 @@ let g:python_host_prog = '/Users/gheadley/.pyenv/versions/2.7.16/bin/python'
 call plug#begin('~/.vim/plugged')
 
 " Look 'n Feel
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'lifepillar/vim-solarized8'
 
 " Quality of Life 
@@ -39,13 +38,10 @@ call plug#end()
 
 " Plugin customisation
 
-" Airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-" let g:airline_solarized_bg='dark'
-let g:airline_solarized_bg='light'
-let g:airline#extensions#tmuxline#enables = 0
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'solarized'
+      \ }
 
 " UltiSnips
 let g:UltiSnipsEditSplit= 'horizontal'
