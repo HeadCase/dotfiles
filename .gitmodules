@@ -35,6 +35,7 @@
 [submodule "nvim/plugged/iron.nvim"]
 	path = nvim/plugged/iron.nvim
 	url = https://github.com/hkupty/iron.nvim
+	branch = direct-invoke
 [submodule "nvim/plugged/nerdtree"]
 	path = nvim/plugged/nerdtree
 	url = https://github.com/preservim/nerdtree
