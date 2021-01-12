@@ -66,3 +66,6 @@
 [submodule "nvim/plugged/vimtex"]
 	path = nvim/plugged/vimtex
 	url = https://github.com/lervag/vimtex
+[submodule "nvim/plugged/ctrlp.vim"]
+	path = nvim/plugged/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
