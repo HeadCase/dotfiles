@@ -78,3 +78,6 @@
 [submodule "nvim/plugged/lightline.vim"]
 	path = nvim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "nvim/plugged/coc.nvim"]
+	path = nvim/plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim

@@ -28,10 +28,11 @@ Plug 'lervag/vimtex'
 Plug 'tmhedberg/simpylfold'
 
 " Autocomplete & Linting 
-Plug 'ncm2/float-preview.nvim'
-Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-jedi'
+" Plug 'ncm2/float-preview.nvim'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 
 
 call plug#end()
@@ -49,6 +50,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/snips']
+
 
 " Vimtex
 let g:tex_flavor='latex'
@@ -77,10 +79,12 @@ let g:vimtex_fold_enabled = 1
 let g:vimtex_format_enabled = 1
 
 " Deoplete style
-call deoplete#custom#var('omni', 'input_patterns', {
-				\ 'tex': g:vimtex#re#deoplete
-				\})
+" call deoplete#custom#var('omni', 'input_patterns', {
+" 				\ 'tex': g:vimtex#re#deoplete
+" 				\})
 
+" Conqueror of Completion
+source $HOME/.vim/plug-config/coc.vim
 
 " vim-auto-save
 let g:auto_save = 0
