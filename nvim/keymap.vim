@@ -15,13 +15,13 @@ noremap g= gqap
 " Miscellaneous GWH4 mappings
 "
 
-nnoremap  <Leader>4s :set spell!<cr>
-nnoremap  <Leader>4n :set number!<cr>
-nnoremap  <Leader>4p :set paste!<cr>
+nnoremap  <Leader>s :set spell!<cr>
+nnoremap  <Leader>nh :noh<cr>
+nnoremap  <Leader>h :set hlsearch<cr>
 
-nnoremap  <Leader>41 :set foldlevel=1<cr>
-nnoremap  <Leader>42 :set foldlevel=2<cr>
-nnoremap  <Leader>4l :set foldlevel=
+nnoremap  <Leader>1 :set foldlevel=1<cr>
+nnoremap  <Leader>2 :set foldlevel=2<cr>
+nnoremap  <Leader>l :set foldlevel=
 
 " map CTRL-SPC for omni completion
 "
