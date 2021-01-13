@@ -44,7 +44,7 @@ call plug#end()
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized'
+      \ 'colorscheme': 'gwh1_solarized'
       \ }
 
 " UltiSnips
@@ -97,7 +97,6 @@ let g:auto_save_events = ["InsertLeave"]
 "   au FileType tex,asciidoc let b:auto_save = 1
 " augroup END
 
-
 " vim-ripple
 let g:ripple_winpos = 'vertical bo'
 
@@ -146,7 +145,7 @@ let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 " set background=dark
-set background=light
+" set background=light
 colorscheme solarized8
 
 au Filetype python set textwidth=0
@@ -187,7 +186,7 @@ map <C-n> :NERDTreeToggle<CR>
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 silent! helptags ALL
- 
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
