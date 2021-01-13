@@ -22,7 +22,7 @@ plugins=(git svn osx tmux)
 
 # Customize to your needs...
 export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.local/bin:$PATH
+# export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.local/bin:$PATH
 
 source ~/.alias
 export BAT_THEME="Solarized (dark)"
@@ -37,12 +37,12 @@ export BAT_THEME="Solarized (dark)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setup for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
 
 # alacritty day/night colourscheme toggle
 function reload_nvim {
@@ -51,9 +51,9 @@ function reload_nvim {
     done
 }
 
-COLOR_DIR="$HOME/.config/alacritty/colours"
-LIGHT_COLOR='solarized_dark.yaml'
-DARK_COLOR='solarized_light.yaml'
+COLOR_DIR="$HOME/.config/alacritty/colors"
+LIGHT_COLOR='solarized_light.yaml'
+DARK_COLOR='solarized_dark.yaml'
 
 alias day="alacritty-colorscheme -C $COLOR_DIR -a $LIGHT_COLOR -V && reload_nvim"
 alias night="alacritty-colorscheme -C $COLOR_DIR -a $DARK_COLOR -V && reload_nvim"

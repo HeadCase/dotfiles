@@ -102,16 +102,16 @@
   #multiplier: 3
 
 # Font configuration
-#font:
+font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: monospace
+    family: FiraCode Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -177,11 +177,11 @@
 
 # Colors (Tomorrow Night)
 colors:
-  # COLORSCHEME: solarized_light.yaml
+  # COLORSCHEME: solarized_dark.yaml
   # Default colors
   primary:
-    background: '0xfdf6e3'
-    foreground: '0x586e75'
+    background: '0x002b36'
+    foreground: '0x839496'
 
   # Normal colors
   normal:
