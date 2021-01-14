@@ -11,15 +11,6 @@
 [submodule "nvim/plugged/ale"]
 	path = nvim/plugged/ale
 	url = https://github.com/dense-analysis/ale
-[submodule "nvim/plugged/deoplete-jedi"]
-	path = nvim/plugged/deoplete-jedi
-	url = https://github.com/deoplete-plugins/deoplete-jedi
-[submodule "nvim/plugged/deoplete.nvim"]
-	path = nvim/plugged/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim
-[submodule "nvim/plugged/float-preview.nvim"]
-	path = nvim/plugged/float-preview.nvim
-	url = https://github.com/ncm2/float-preview.nvim
 [submodule "nvim/plugged/iron.nvim"]
 	path = nvim/plugged/iron.nvim
 	url = https://github.com/hkupty/iron.nvim
