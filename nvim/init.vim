@@ -31,9 +31,6 @@ Plug 'lervag/vimtex'
 Plug 'tmhedberg/simpylfold'
 
 " Autocomplete & Linting 
-" Plug 'ncm2/float-preview.nvim'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 
@@ -46,6 +43,9 @@ call plug#end()
 let g:lightline = {
       \ 'colorscheme': 'gwh1_solarized'
       \ }
+let g:tmuxline_preset = 'powerline'
+let g:tmuxline_theme = 'lightline'
+autocmd VimEnter * Tmuxline lightline
 
 " UltiSnips
 let g:UltiSnipsEditSplit= 'horizontal'
@@ -98,7 +98,7 @@ let g:auto_save_events = ["InsertLeave"]
 " augroup END
 
 " vim-ripple
-let g:ripple_winpos = 'vertical bo'
+let g:ripple_winpos = 'vertical bo'    " Open REPL on RHS
 
 "
 " ctrlp
@@ -141,12 +141,15 @@ autocmd CompleteDone * silent! pclose!
 set completeopt-=preview
 
 
-let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
-set termguicolors
 " set background=dark
-" set background=light
+set background=light
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 colorscheme solarized8
+
 
 au Filetype python set textwidth=0
 
@@ -187,42 +190,3 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 silent! helptags ALL
 
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" source ~/.vim/keymap.vim
-"
-" Plug 'klen/python-mode'
-" Plug 'lambdalisue/vim-pyenv'
-" Plug 'habamax/vim-asciidoctor'
-"
-" let g:UltiSnipsSnippetsDir= $HOME . "/.vim/snips"
-"
-" let g:vimtex_matchparen_enabled = 0
-" let g:vimtex_fold_manual = 1
-"
-" " Autocompletion configuration
-" set completeopt=longest,menuone
-" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-"   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
-" inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-"   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-"
-"set nocompatible
-"set shortmess+=I                              " turn off opening splash screen
-"set nohlsearch                                " don't highlight search results
-"set autowrite
-"set wrap                                      " auto wrap
-"set textwidth=78                              " set wrap width to 78
-"set backspace=indent,eol,start                " allow backspace to join lines
-"set ts=2                                      " set tapstop to 2 spaces
-"set sw=2                                      " set shiftwrap to 2 spaces
-"set bs=2                                      " allow backspacing over everything in insert mode
-"set viminfo='20,\"50  												" read/write a .viminfo file, don't store more
-"set viminfo='20,<50,s10,h,%,n~/.cache/viminfo " than 50 lines of registers
-"set ignorecase
-"set scrolloff=5							
-"set foldenable
-"set laststatus=2

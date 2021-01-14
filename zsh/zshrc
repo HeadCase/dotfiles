@@ -45,9 +45,15 @@ export BAT_THEME="Solarized (dark)"
 # fi
 
 # alacritty day/night colourscheme toggle
-function reload_nvim {
+function reload_nvim_night {
     for SERVER in $(nvr --serverlist); do
-        nvr -cc "source ~/.vim/init.vim" --servername $SERVER &
+        nvr -cc "source ~/.vim/night.vim" --servername $SERVER &
+    done
+}
+
+function reload_nvim_day {
+    for SERVER in $(nvr --serverlist); do
+        nvr -cc "source ~/.vim/day.vim" --servername $SERVER &
     done
 }
 
@@ -55,5 +61,5 @@ COLOR_DIR="$HOME/.config/alacritty/colors"
 LIGHT_COLOR='solarized_light.yaml'
 DARK_COLOR='solarized_dark.yaml'
 
-alias day="alacritty-colorscheme -C $COLOR_DIR -a $LIGHT_COLOR -V && reload_nvim"
-alias night="alacritty-colorscheme -C $COLOR_DIR -a $DARK_COLOR -V && reload_nvim"
+alias day="alacritty-colorscheme -C $COLOR_DIR -a $LIGHT_COLOR -V && reload_nvim_day"
+alias night="alacritty-colorscheme -C $COLOR_DIR -a $DARK_COLOR -V && reload_nvim_night"
