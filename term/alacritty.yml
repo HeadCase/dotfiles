@@ -46,11 +46,11 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 2
-    y: 2
+    x: 0
+    y: 0
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -114,40 +114,40 @@ font:
     family: FiraCode Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Retina
 
   # Bold font face
-  #bold:
+  bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    style: Medium
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Menlo
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    family: Menlo
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+    style: Bold Italic
 
   # Point size
   size: 16.0
@@ -163,14 +163,18 @@ font:
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
   #glyph_offset:
-  #  x: 0
-  #  y: 0
 
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  #use_thin_strokes: true
+  use_thin_strokes: true
+
+
+  live_config_reload: true
+
+  selection:
+    save_to_clipboard: true
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
@@ -180,16 +184,41 @@ font:
 #
 # Tmux
 #
-# key_bindings:
-#   - { key: 1, mods: Command, chars: "\x01\x31"  }
+key_bindings:
+  - { key: Comma,     mods: Command,      command: 
+    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}
+    }
+  - { key: Key1, mods: Command, chars: "\x01\x31"  }
+  - { key: Key2, mods: Command, chars: "\x01\x32"  }
+  - { key: Key3, mods: Command, chars: "\x01\x33"  }
+  - { key: Key4, mods: Command, chars: "\x01\x34"  }
+  - { key: Key5, mods: Command, chars: "\x01\x35"  }
+  - { key: Key6, mods: Command, chars: "\x01\x36"  }
+  - { key: Key7, mods: Command, chars: "\x01\x37"  }
+  - { key: Key8, mods: Command, chars: "\x01\x38"  }
+  - { key: Key9, mods: Command, chars: "\x01\x39"  }
+  - { key: Backslash, mods: Command|Shift, chars: "\x01\x7c"  }
+  - { key: Minus, mods: Command|Shift, chars: "\x01\x2d"  }
+  - { key: D, mods: Command, chars: "\x01\x64"  }
+  - { key: C, mods: Command, chars: "\x01\x63"  }
+  - { key: T, mods: Command, chars: "\x01\x74"  }
+  - { key: T, mods: Command|Shift, chars: "\x01\x54"  }
+  - { key: J, mods: Command, chars: "\x01\x6a"  }
+  - { key: K, mods: Command, chars: "\x01\x6b"  }
+  - { key: H, mods: Command, chars: "\x01\x68"  }
+  - { key: L, mods: Command, chars: "\x01\x6c"  }
+  - { key: J, mods: Command|Shift, chars: "\x01\x4a"  }
+  - { key: K, mods: Command|Shift, chars: "\x01\x4b"  }
+  - { key: H, mods: Command|Shift, chars: "\x01\x48"  }
+  - { key: L, mods: Command|Shift, chars: "\x01\x4c"  }
 
 # Colors (Solarized)
 colors:
-  # COLORSCHEME: solarized_dark.yaml
+  # COLORSCHEME: solarized_light.yaml
   # Default colors
   primary:
-    background: '0x002b36'
-    foreground: '0x839496'
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
 
   # Normal colors
   normal:
