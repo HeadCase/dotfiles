@@ -48,9 +48,6 @@
 [submodule "nvim/plugged/vimtex"]
 	path = nvim/plugged/vimtex
 	url = https://github.com/lervag/vimtex
-[submodule "nvim/plugged/ctrlp.vim"]
-	path = nvim/plugged/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "nvim/plugged/vim-ripple"]
 	path = nvim/plugged/vim-ripple
 	url = https://github.com/urbainvaes/vim-ripple
@@ -72,3 +69,9 @@
 [submodule "nvim/plugged/coc.nvim"]
 	path = nvim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "nvim/plugged/fzf.vim"]
+	path = nvim/plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "nvim/plugged/fzf"]
+	path = nvim/plugged/fzf
+	url = https://github.com/junegunn/fzf

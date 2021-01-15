@@ -20,10 +20,11 @@ Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'                         
 Plug 'edkolev/tmuxline.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug '907th/vim-auto-save'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Language support
 Plug 'urbainvaes/vim-ripple'
@@ -101,15 +102,15 @@ let g:auto_save_events = ["InsertLeave"]
 let g:ripple_winpos = 'vertical bo'    " Open REPL on RHS
 
 "
-" ctrlp
-let g:ctrlp_working_path_mode = 'a'
-let g:ctrlp_max_files = 200000
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore=vendor --ignore images --ignore fonts -g ""'
-    let g:ctrlp_use_caching = 0
-else
-    let g:ctrlp_clear_cache_on_exit = 0
-endif
+" " ctrlp
+" let g:ctrlp_working_path_mode = 'a'
+" let g:ctrlp_max_files = 200000
+" if executable('ag')
+"     let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore=vendor --ignore images --ignore fonts -g ""'
+"     let g:ctrlp_use_caching = 0
+" else
+"     let g:ctrlp_clear_cache_on_exit = 0
+" endif
 
 " asciidoctor
 let g:asciidoctor_pdf_executable = 'asciidoctor-pdf'
@@ -185,6 +186,8 @@ set encoding=utf-8
 
 " Keybindings
 map <C-n> :NERDTreeToggle<CR>
+nmap <C-P> :Files<CR>
+nmap <C-B> :Buffers<CR>
 
 " tidy short cut for spelling
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
