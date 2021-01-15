@@ -149,6 +149,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 colorscheme solarized8
+highlight Comment cterm=italic gui=italic
 
 
 au Filetype python set textwidth=0
