@@ -185,32 +185,30 @@ font:
 # Tmux
 #
 key_bindings:
-  - { key: Comma,     mods: Command,      command: 
-    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}
-    }
-  - { key: Key1, mods: Command, chars: "\x01\x31"  }
-  - { key: Key2, mods: Command, chars: "\x01\x32"  }
-  - { key: Key3, mods: Command, chars: "\x01\x33"  }
-  - { key: Key4, mods: Command, chars: "\x01\x34"  }
-  - { key: Key5, mods: Command, chars: "\x01\x35"  }
-  - { key: Key6, mods: Command, chars: "\x01\x36"  }
-  - { key: Key7, mods: Command, chars: "\x01\x37"  }
-  - { key: Key8, mods: Command, chars: "\x01\x38"  }
-  - { key: Key9, mods: Command, chars: "\x01\x39"  }
-  - { key: Backslash, mods: Command|Shift, chars: "\x01\x7c"  }
-  - { key: Minus, mods: Command|Shift, chars: "\x01\x2d"  }
-  - { key: D, mods: Command, chars: "\x01\x64"  }
-  - { key: C, mods: Command|Shift, chars: "\x01\x63"  }
-  - { key: T, mods: Command, chars: "\x01\x74"  }
-  - { key: T, mods: Command|Shift, chars: "\x01\x54"  }
-  - { key: J, mods: Command, chars: "\x01\x6a"  }
-  - { key: K, mods: Command, chars: "\x01\x6b"  }
-  - { key: H, mods: Command, chars: "\x01\x68"  }
-  - { key: L, mods: Command, chars: "\x01\x6c"  }
-  - { key: J, mods: Command|Shift, chars: "\x01\x4a"  }
-  - { key: K, mods: Command|Shift, chars: "\x01\x4b"  }
-  - { key: H, mods: Command|Shift, chars: "\x01\x48"  }
-  - { key: L, mods: Command|Shift, chars: "\x01\x4c"  }
+  - {key: Comma, mods: Command, command: {program: sh, args: [-c, open ~/.config/alacritty/alacritty.yml]}}
+  - {key: Key1, mods: Command, chars: "\x011"}
+  - {key: Key2, mods: Command, chars: "\x012"}
+  - {key: Key3, mods: Command, chars: "\x013"}
+  - {key: Key4, mods: Command, chars: "\x014"}
+  - {key: Key5, mods: Command, chars: "\x015"}
+  - {key: Key6, mods: Command, chars: "\x016"}
+  - {key: Key7, mods: Command, chars: "\x017"}
+  - {key: Key8, mods: Command, chars: "\x018"}
+  - {key: Key9, mods: Command, chars: "\x019"}
+  - {key: Backslash, mods: Command|Shift, chars: "\x01|"}
+  - {key: Minus, mods: Command|Shift, chars: "\x01-"}
+  - {key: D, mods: Command, chars: "\x01d"}
+  - {key: C, mods: Command|Shift, chars: "\x01c"}
+  - {key: T, mods: Command, chars: "\x01t"}
+  - {key: T, mods: Command|Shift, chars: "\x01T"}
+  - {key: J, mods: Command, chars: "\x01j"}
+  - {key: K, mods: Command, chars: "\x01k"}
+  - {key: H, mods: Command, chars: "\x01h"}
+  - {key: L, mods: Command, chars: "\x01l"}
+  - {key: J, mods: Command|Shift, chars: "\x01J"}
+  - {key: K, mods: Command|Shift, chars: "\x01K"}
+  - {key: H, mods: Command|Shift, chars: "\x01H"}
+  - {key: L, mods: Command|Shift, chars: "\x01L"}
 
 # Colors (Solarized)
 colors:
