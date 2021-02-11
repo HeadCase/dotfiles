@@ -1,9 +1,0 @@
-pane	personal	1	:local	0	:	0	:/Users/gheadley	1	zsh	:
-pane	personal	2	:fourier	1	:*	0	:/Users/gheadley	1	ssh	:ssh fourier-ext
-pane	personal	3	:zsh	0	:	0	:/Users/gheadley	1	zsh	:
-pane	personal	4	:unifi	0	:-	0	:/Users/gheadley	1	zsh	:
-window	personal	1	0	:	aaff,120x40,0,0,2
-window	personal	2	1	:*	ab00,120x40,0,0,3
-window	personal	3	0	:	ab01,120x40,0,0,4
-window	personal	4	0	:-	ab02,120x40,0,0,5
-state	personal	
