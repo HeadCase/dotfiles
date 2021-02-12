@@ -9,7 +9,6 @@ Ubuntu GUI packages
 Configuration
 =============
 
+- swap caps lock for escape
 - dotfiles from GitHub repo
-
-
 
