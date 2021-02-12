@@ -1,0 +1,15 @@
+Ubuntu GUI packages
+===================
+
+- git
+- curl
+- alacritty
+- 
+
+Configuration
+=============
+
+- dotfiles from GitHub repo
+
+
+
