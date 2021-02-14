@@ -4,11 +4,19 @@ Ubuntu GUI packages
 - git
 - curl
 - alacritty
-- 
+- tmux
+- zsh
+- ohmyzsh
+- neovim
+- pyenv
+- jedi
+- bat
+- openssh
 
 Configuration
 =============
 
+- set sudo to no require password
 - swap caps lock for escape
 - dotfiles from GitHub repo
 
