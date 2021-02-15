@@ -61,5 +61,5 @@ COLOR_DIR="$HOME/.config/alacritty/colors"
 LIGHT_COLOR='solarized_light.yaml'
 DARK_COLOR='solarized_dark.yaml'
 
-alias day="alacritty-colorscheme -C $COLOR_DIR -a $LIGHT_COLOR -V && reload_nvim_day"
-alias night="alacritty-colorscheme -C $COLOR_DIR -a $DARK_COLOR -V && reload_nvim_night"
+alias day="alacritty-colorscheme -V -C $COLOR_DIR apply $LIGHT_COLOR && reload_nvim_day"
+alias night="alacritty-colorscheme -V -C $COLOR_DIR apply $DARK_COLOR  && reload_nvim_night"
