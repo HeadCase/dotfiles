@@ -12,10 +12,13 @@ Ubuntu GUI packages
 - jedi
 - bat
 - openssh
+- timeshift (for backups?)
+- zeal (dash clone)
 
 Configuration
 =============
 
+- Fira Code & Meslo nerd fonts
 - set sudo to no require password
 - swap caps lock for escape
 - dotfiles from GitHub repo
