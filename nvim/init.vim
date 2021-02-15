@@ -4,8 +4,8 @@
 source ~/.vim/keymap.vim
 
 " Setup plugin system using vimPlug
-let g:python3_host_prog = '/Users/gheadley/.pyenv/versions/3.7.4/bin/python'
-let g:python_host_prog = '/Users/gheadley/.pyenv/versions/2.7.16/bin/python'
+let g:python3_host_prog = '/home/gheadley/.pyenv/versions/3.9.1/bin/python'
+let g:python_host_prog = '/home/gheadley/.pyenv/versions/2.7.18/bin/python'
 
 call plug#begin('~/.vim/plugged')
 
