@@ -8,6 +8,7 @@ Ubuntu GUI packages
 - zsh
 - ohmyzsh
 - neovim
+- fzf
 - pyenv
 - jedi
 - bat
