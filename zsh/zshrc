@@ -34,7 +34,10 @@ export BAT_THEME="Solarized (dark)"
 
 
 # Keybindings for fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+
 
 # Setup for pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
