@@ -75,3 +75,6 @@
 [submodule "nvim/plugged/fzf"]
 	path = nvim/plugged/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "nvim/plugged/vim-fugitive"]
+	path = nvim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
