@@ -1,4 +1,5 @@
 {
+  "diagnostic.displayByAle": true,
   "jedi.enable": true,
   "jedi.startupMessage": true,
   "jedi.markupKindPreferred": "plaintext",

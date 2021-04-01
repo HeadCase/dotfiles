@@ -121,6 +121,8 @@ let g:asciidoctor_fenced_languages = ['python', 'r']
 
 " ALE
 let g:ale_completion_enabled = 0
+let g:ale_disable_lsp =1
+let g:ale_sign_column_always =1
 let g:ale_linters = {
 	\ 'python': ['pyls', 'flake8', 'pylint']
 	\ }
