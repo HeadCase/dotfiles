@@ -150,7 +150,7 @@ font:
     style: Bold Italic Nerd Font
 
   # Point size
-  size: 13.0
+  size: 11.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -212,11 +212,11 @@ key_bindings:
 
 # Colors (Solarized)
 colors:
-  # COLORSCHEME: solarized_dark.yaml
+  # COLORSCHEME: solarized_light.yaml
   # Default colors
   primary:
-    background: '0x002b36'
-    foreground: '0x839496'
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
 
   # Normal colors
   normal:

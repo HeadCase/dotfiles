@@ -1,11 +1,15 @@
 # Need config to automate ssh-agents
+#
+#
+Host github.com
+  User git
+  IdentityFile ~/.ssh/bastion
 
 Host muir-wall
 	AddKeysToAgent yes
 	ForwardAgent yes
 	IdentityFile ~/.ssh/bastion
 	Hostname muir-wall
-
 
 Host muir-ext
 	AddKeysToAgent yes
