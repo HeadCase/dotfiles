@@ -18,9 +18,6 @@
 [submodule "nvim/plugged/nerdtree"]
 	path = nvim/plugged/nerdtree
 	url = https://github.com/preservim/nerdtree
-[submodule "nvim/plugged/SimpylFold"]
-	path = nvim/plugged/SimpylFold
-	url = https://github.com/tmhedberg/SimpylFold
 [submodule "nvim/plugged/tabular"]
 	path = nvim/plugged/tabular
 	url = https://github.com/godlygeek/tabular
@@ -78,3 +75,6 @@
 [submodule "nvim/plugged/vim-fugitive"]
 	path = nvim/plugged/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "nvim/plugged/simpylfold"]
+	path = nvim/plugged/simpylfold
+	url = https://github.com/tmhedberg/SimpylFold
