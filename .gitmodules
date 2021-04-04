@@ -78,3 +78,6 @@
 [submodule "nvim/plugged/simpylfold"]
 	path = nvim/plugged/simpylfold
 	url = https://github.com/tmhedberg/SimpylFold
+[submodule "nvim/plugged/vim-polyglot"]
+	path = nvim/plugged/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot

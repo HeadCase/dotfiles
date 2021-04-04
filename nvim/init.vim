@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " Look 'n Feel
 Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
 Plug 'lifepillar/vim-solarized8'
 
 " Quality of Life 
@@ -19,7 +20,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 Plug 'godlygeek/tabular'                         
-Plug 'edkolev/tmuxline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
@@ -31,6 +31,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'urbainvaes/vim-ripple'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/simpylfold'
+Plug 'sheerun/vim-polyglot'
 
 " Autocomplete & Linting 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
