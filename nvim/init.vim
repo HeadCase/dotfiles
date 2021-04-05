@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " Look 'n Feel
 Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
 Plug 'lifepillar/vim-solarized8'
 
 " Quality of Life 
@@ -18,7 +19,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'godlygeek/tabular'                         
-Plug 'edkolev/tmuxline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
@@ -30,6 +30,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'urbainvaes/vim-ripple'
 Plug 'lervag/vimtex'
 Plug 'tmhedberg/simpylfold'
+Plug 'sheerun/vim-polyglot'
 
 " Autocomplete & Linting 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -42,7 +43,14 @@ call plug#end()
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'gwh1_solarized'
+      \ 'colorscheme': 'gwh1_solarized',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ }, 
       \ }
 let g:tmuxline_preset = 'powerline'
 let g:tmuxline_theme = 'lightline'
@@ -121,25 +129,17 @@ let g:asciidoctor_fenced_languages = ['python', 'r']
 
 " ALE
 let g:ale_completion_enabled = 0
+let g:ale_disable_lsp = 1
+let g:ale_sign_column_always =1
 let g:ale_linters = {
-	\ 'python': ['pyls', 'flake8', 'pylint']
+	\ 'python': ['flake8', 'pylint']
 	\ }
 let g:ale_python_pylint_options = '--rcfile ~/.pylintrc'
 let g:ale_fixers = {
-			\ 'python': ['black']
+			\ 'python': ['yapf', 'isort']
 			\ }
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 1
 nmap <F8> <Plug>(ale_fix)
-
-" call deoplete#custom#option('sources', {
-" 	\ '_': ['ale']
-" 	\})
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-" let g:float_preview#docked	 = 1
-autocmd CompleteDone * silent! pclose!
-set completeopt-=preview
 
 
 " set background=dark
@@ -153,7 +153,7 @@ colorscheme solarized8
 highlight Comment cterm=italic gui=italic
 
 
-au Filetype python set textwidth=0
+" au Filetype python set textwidth=0
 
 " au Filetype tex 
 " 	\ set tabstop=2 |
@@ -165,12 +165,12 @@ filetype plugin indent on
 set relativenumber
 set number
 set wrap
-set textwidth=78
-set tabstop=2
 set expandtab
 set smarttab
-set ai
-set si
+set textwidth=78
+set tabstop=2
+" set ai
+" set si
 set shiftwidth=2
 set softtabstop=2
 set colorcolumn=80                  " show right margin indicator

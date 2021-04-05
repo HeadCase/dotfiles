@@ -75,3 +75,6 @@
 [submodule "nvim/plugged/fzf"]
 	path = nvim/plugged/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "nvim/plugged/vim-polyglot"]
+	path = nvim/plugged/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
