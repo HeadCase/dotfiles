@@ -28,14 +28,14 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Language support
-Plug 'urbainvaes/vim-ripple'
-Plug 'lervag/vimtex'
-Plug 'tmhedberg/simpylfold'
+" Plug 'urbainvaes/vim-ripple'
+" Plug 'lervag/vimtex'
+" Plug 'tmhedberg/simpylfold'
 Plug 'sheerun/vim-polyglot'
 
 " Autocomplete & Linting 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'dense-analysis/ale'
 
 
 call plug#end()
@@ -67,20 +67,20 @@ let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/snips']
 
 
 " Vimtex
-let g:tex_flavor='latex'
-let g:vimtex_view_method = 'skim'
+" let g:tex_flavor='latex'
+" let g:vimtex_view_method = 'skim'
 " let g:vimtex_compiler_progname = 'nvr'
 " let g:vimtex_parser_bib_backend = 'bibparse'
-let g:vimtex_compiler_latexmk = {
-    \ 'backend' : 'nvim',
-    \ 'options' : [
-    \   '-file-line-error',
-    \   '-synctex=0',
-    \   '-interaction=nonstopmode',
-    \   '-pdf',
-    \   '-verbose',
-    \ ]
-    \}
+" let g:vimtex_compiler_latexmk = {
+    " \ 'backend' : 'nvim',
+    " \ 'options' : [
+    " \   '-file-line-error',
+    " \   '-synctex=0',
+    " \   '-interaction=nonstopmode',
+    " \   '-pdf',
+    " \   '-verbose',
+    " \ ]
+    " \}
     " \   '-pdflatex="xelatex --enable-8bit-chars --shell-escape %O %S"',
     " \   '-file-line-error',
     " \   '-synctex=1',
@@ -88,12 +88,12 @@ let g:vimtex_compiler_latexmk = {
     " \   '-pdf',
     " \   '-verbose',
     " \   '-output-driver=xdvipdfmx -z3',
-let g:vimtex_quickfix_mode=0
-let g:vimtex_fold_enabled = 1
-let g:vimtex_format_enabled = 1
+" let g:vimtex_quickfix_mode=0
+" let g:vimtex_fold_enabled = 1
+" let g:vimtex_format_enabled = 1
 
 " Conqueror of Completion
-source $HOME/.vim/plug-config/coc.vim
+" source $HOME/.vim/plug-config/coc.vim
 
 " vim-auto-save
 let g:auto_save = 0
@@ -104,14 +104,14 @@ let g:auto_save_events = ["InsertLeave"]
 " augroup END
 
 " vim-ripple
-let g:ripple_winpos = 'vertical bo'    " Open REPL on RHS
+" let g:ripple_winpos = 'vertical bo'    " Open REPL on RHS
 
 " asciidoctor
-let g:asciidoctor_pdf_executable = 'asciidoctor-pdf'
-let g:asciidoctor_pdf_themes_path = '~/.adoc'
-let g:asciidoctor_folding = 1
-let g:asciidoctor_fold_options = 1
-let g:asciidoctor_fenced_languages = ['python', 'r']
+" let g:asciidoctor_pdf_executable = 'asciidoctor-pdf'
+" let g:asciidoctor_pdf_themes_path = '~/.adoc'
+" let g:asciidoctor_folding = 1
+" let g:asciidoctor_fold_options = 1
+" let g:asciidoctor_fenced_languages = ['python', 'r']
 
 " ALE
 let g:ale_completion_enabled = 0
