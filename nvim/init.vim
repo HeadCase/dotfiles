@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " Look 'n Feel
 Plug 'itchyny/lightline.vim'
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 Plug 'lifepillar/vim-solarized8'
 
 " Quality of Life 
@@ -54,9 +54,9 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ }, 
       \ }
-let g:tmuxline_preset = 'powerline'
-let g:tmuxline_theme = 'lightline'
-autocmd VimEnter * Tmuxline lightline
+" let g:tmuxline_preset = 'powerline'
+" let g:tmuxline_theme = 'lightline'
+" autocmd VimEnter * Tmuxline lightline
 
 " UltiSnips
 let g:UltiSnipsEditSplit= 'horizontal'
