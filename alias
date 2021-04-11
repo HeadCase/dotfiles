@@ -6,6 +6,7 @@ alias vi='nvim'
 alias cat='bat'
 alias v='ls -lAhG'
 alias vt='ls -lAhGt | head -20'
+alias handbrake='HandBrakeCLI'
 
 alias wtr='curl wttr.in'
 
