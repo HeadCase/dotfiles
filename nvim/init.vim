@@ -4,8 +4,8 @@
 source ~/.vim/keymap.vim
 
 " Setup plugin system using vimPlug
-let g:python3_host_prog = '/Users/gheadley/.pyenv/versions/3.7.4/bin/python'
-let g:python_host_prog = '/Users/gheadley/.pyenv/versions/2.7.16/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/3.9.1/envs/nvim3/bin/python'
+let g:python_host_prog = '~/.pyenv/versions/2.7.16/bin/pythonenvs/nvim2/bin/python'
 
 call plug#begin('~/.vim/plugged')
 
@@ -139,6 +139,14 @@ let g:ale_fixers = {
 			\ 'python': ['yapf', 'isort']
 			\ }
 let g:ale_fix_on_save = 1
+let g:ale_python_flake8_executable = $HOME . "/.pyenv/versions/nvim3/bin/flake8"
+let g:ale_python_flake8_use_global = 1
+let g:ale_python_pylint_executable = $HOME . "/.pyenv/versions/nvim3/bin/pylint"
+let g:ale_python_pylint_use_global = 1
+let g:ale_python_yapf_executable = $HOME . "/.pyenv/versions/nvim3/bin/yapf"
+let g:ale_python_yapf_use_global = 1
+let g:ale_python_isort_executable = $HOME . "/.pyenv/versions/nvim3/bin/isort"
+let g:ale_python_isort_use_global = 1
 nmap <F8> <Plug>(ale_fix)
 
 

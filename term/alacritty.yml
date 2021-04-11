@@ -212,11 +212,11 @@ key_bindings:
 
 # Colors (Solarized)
 colors:
-  # COLORSCHEME: solarized_dark.yaml
+  # COLORSCHEME: solarized_light.yaml
   # Default colors
   primary:
-    background: '0x002b36'
-    foreground: '0x839496'
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
 
   # Normal colors
   normal:
