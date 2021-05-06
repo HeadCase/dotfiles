@@ -27,5 +27,7 @@ alias ai='~/CloudStation/home/school/MSc/study/COMP5623\ -\ artificial\ intellig
 alias cs='~/CloudStation/home/school/MSc/study/MATH5747\ -\ learning\ skills\ through\ case\ studies'
 alias bs='~/CloudStation/home/school/MSc/study/MATH5820\ -\ bayesian\ statistics\ and\ causality'
 alias diss='~/CloudStation/home/school/MSc/study/MATH5872\ -\ dissertation\ in\ data\ science\ and\ analytics'
-alias dev='~/CloudStation/home/develop/'
+alias dev='~/develop/'
+alias devpy='~/develop/python/'
+alias datsci='~/develop/datsci/'
 
