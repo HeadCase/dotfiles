@@ -9,8 +9,7 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/bastion: keys/bastion
     ~/.config/nvim: nvim
-    ~/.vim: nvim
-    ~/.ctags: 
+    ~/.local/share/nvim/site/pack: nvim/packer
     ~/.config/alacritty: term
     ~/.alias: alias
     ~/.tmux: 
