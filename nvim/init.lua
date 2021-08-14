@@ -4,6 +4,7 @@ require('plugins')
 -- Sets and lets (settings)
 require('settings.config')
 require('settings.color')
+require('settings.keymap')
 
 -- Package settings
 require('plugins/treesitter')
