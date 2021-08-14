@@ -69,3 +69,9 @@
 [submodule "nvim/packer/nvim-lspinstall"]
 	path = nvim/packer/nvim-lspinstall
 	url = https://github.com/kabouzeid/nvim-lspinstall
+[submodule "nvim/packer/nvim-tree.lua"]
+	path = nvim/packer/nvim-tree.lua
+	url = https://github.com/kyazdani42/nvim-tree.lua
+[submodule "nvim/packer/neoscroll.nvim"]
+	path = nvim/packer/neoscroll.nvim
+	url = https://github.com/karb94/neoscroll.nvim

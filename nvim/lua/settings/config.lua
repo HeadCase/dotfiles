@@ -22,3 +22,5 @@ opt.autowrite = true
 opt.history=700                     -- keep 700 lines of command line history
 opt.undolevels=700                  -- keep 700 lines of undo
 opt.smartcase=true
+
+vim.o.completeopt = "menuone,noselect"

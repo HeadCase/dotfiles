@@ -1,3 +1,6 @@
+-- Only required if you have packer configured as `opt`
+vim.cmd [[packadd packer.nvim]]
+
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -8,6 +11,11 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-compe'
   use 'eddyekofo94/gruvbox-flat.nvim'
   use 'b3nj5m1n/kommentary'
+  use 'karb94/neoscroll.nvim'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons'
+}
   use {
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}

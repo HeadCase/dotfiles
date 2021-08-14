@@ -1,5 +1,4 @@
-local saga = require('lspsaga')
-saga.init_lsp_saga({
+require('lspsaga').init_lsp_saga({
   code_action_icon = " ",
   definition_preview_icon = "  ",
   dianostic_header_icon = "   ",
