@@ -36,9 +36,6 @@
 [submodule "nvim/packer/packer/start/lualine.nvim"]
 	path = nvim/packer/lualine.nvim
 	url = https://github.com/hoob3rt/lualine.nvim
-[submodule "nvim/packer/packer/start/material.nvim"]
-	path = nvim/packer/material.nvim
-	url = https://github.com/marko-cerovac/material.nvim
 [submodule "nvim/packer/packer/start/nvim-compe"]
 	path = nvim/packer/nvim-compe
 	url = https://github.com/hrsh7th/nvim-compe
@@ -66,3 +63,9 @@
 [submodule "nvim/packer/packer/start/surround.nvim"]
 	path = nvim/packer/surround.nvim
 	url = https://github.com/blackCauldron7/surround.nvim
+[submodule "nvim/packer/gruvbox-flat.nvim"]
+	path = nvim/packer/gruvbox-flat.nvim
+	url = https://github.com/eddyekofo94/gruvbox-flat.nvim
+[submodule "nvim/packer/nvim-lspinstall"]
+	path = nvim/packer/nvim-lspinstall
+	url = https://github.com/kabouzeid/nvim-lspinstall

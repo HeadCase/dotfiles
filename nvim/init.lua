@@ -30,13 +30,14 @@ opt.smartcase=true
 -- opt.set encoding=utf-8
 
 -- Colour scheme
-require('material').set()
-g.material_contrast = false
-g.material_italic_comments = true
+
+cmd[[colorscheme gruvbox-flat]]
+vim.g.gruvbox_flat_style = "dark"
+
 
 -- Status line
 require('lualine').setup{
-  options = {theme = 'material'}
+  options = {theme = 'gruvbox-flat'}
 }
 
 
@@ -46,6 +47,22 @@ require('lualine').setup{
 ----------------------------------
 -- LSP, tree sitter, completion --
 ----------------------------------
+local function setup_servers()
+  require'lspinstall'.setup()
+  local servers = require'lspinstall'.installed_servers()
+  for _, server in pairs(servers) do
+    require'lspconfig'[server].setup{}
+  end
+end
+
+setup_servers()
+
+-- Automatically reload after `:LspInstall <server>` so we don't have to restart neovim
+require'lspinstall'.post_install_hook = function ()
+  setup_servers() -- reload installed servers
+  vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
+end
+
 require('lspconfig').pyright.setup{}
 local nvim_lsp = require('lspconfig')    
 
@@ -103,6 +120,7 @@ saga.init_lsp_saga({
 
 require'nvim-treesitter.configs'.setup {
   -- Modules and its options go here
+  ensure_installed = 'maintained',
   highlight = { enable = true },
   incremental_selection = { enable = true },
   textobjects = { enable = true },
@@ -119,8 +137,6 @@ require'compe'.setup {
   incomplete_delay = 400;
   max_abbr_width = 100;
   max_kind_width = 100;
-  max_menu_width = 100;
-  documentation = {
     border = { '', '' ,'', ' ', '', '', '', ' ' }, -- the border option is the same as `|help nvim_open_win|`
     winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
     max_width = 120,
@@ -139,7 +155,6 @@ require'compe'.setup {
     ultisnips = true;
     luasnip = true;
   };
-}
 
 require('telescope').setup{
   defaults = {
@@ -207,9 +222,10 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'neovim/nvim-lspconfig'
+  use 'kabouzeid/nvim-lspinstall'
   use 'glepnir/lspsaga.nvim'
   use 'hrsh7th/nvim-compe'
-  use 'marko-cerovac/material.nvim'
+  use 'eddyekofo94/gruvbox-flat.nvim'
   use 'b3nj5m1n/kommentary'
   use {
       'nvim-telescope/telescope.nvim',
@@ -225,13 +241,4 @@ return require('packer').startup(function()
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
-  -- use 'savq/melange'
-  -- use 'sainnhe/everforest'
-  -- use 'sainnhe/everforest'
-  -- use 'shougo/deoplete-lsp'
-  -- use 'norcalli/nvim-colorizer.lua'
-  -- use 'shougo/deoplete.nvim', run = fn['remote#host#UpdateRemotePlugins']
-  -- use 'junegunn/fzf', run = fn['fzf#install']
-  -- use 'junegunn/fzf.vim'
-  -- use 'ojroques/nvim-lspfuzzy'
 end)
