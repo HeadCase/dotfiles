@@ -25,44 +25,44 @@
 	path = nvim/plugged/simpylfold
 	url = https://github.com/tmhedberg/SimpylFold
 [submodule "nvim/packer/packer/start/kommentary"]
-	path = nvim/packer/packer/start/kommentary
+	path = nvim/packer/kommentary
 	url = https://github.com/b3nj5m1n/kommentary
 [submodule "nvim/packer/packer/start/nvim/packer/packer/start/kommentary"]
 	path = nvim/packer/packer/start/nvim/packer/packer/start/kommentary
 	url = https://github.com/b3nj5m1n/kommentary
 [submodule "nvim/packer/packer/start/lspsaga.nvim"]
-	path = nvim/packer/packer/start/lspsaga.nvim
+	path = nvim/packer/lspsaga.nvim
 	url = https://github.com/glepnir/lspsaga.nvim
 [submodule "nvim/packer/packer/start/lualine.nvim"]
-	path = nvim/packer/packer/start/lualine.nvim
+	path = nvim/packer/lualine.nvim
 	url = https://github.com/hoob3rt/lualine.nvim
 [submodule "nvim/packer/packer/start/material.nvim"]
-	path = nvim/packer/packer/start/material.nvim
+	path = nvim/packer/material.nvim
 	url = https://github.com/marko-cerovac/material.nvim
 [submodule "nvim/packer/packer/start/nvim-compe"]
-	path = nvim/packer/packer/start/nvim-compe
+	path = nvim/packer/nvim-compe
 	url = https://github.com/hrsh7th/nvim-compe
 [submodule "nvim/packer/packer/start/nvim-lspconfig"]
-	path = nvim/packer/packer/start/nvim-lspconfig
+	path = nvim/packer/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
 [submodule "nvim/packer/packer/start/nvim-treesitter"]
-	path = nvim/packer/packer/start/nvim-treesitter
+	path = nvim/packer/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
 [submodule "nvim/packer/packer/start/nvim-web-devicons"]
-	path = nvim/packer/packer/start/nvim-web-devicons
+	path = nvim/packer/nvim-web-devicons
 	url = https://github.com/kyazdani42/nvim-web-devicons
 [submodule "nvim/packer/packer/start/packer.nvim"]
-	path = nvim/packer/packer/start/packer.nvim
+	path = nvim/packer/packer.nvim
 	url = https://github.com/wbthomason/packer.nvim
 [submodule "nvim/packer/packer/start/plenary.nvim"]
-	path = nvim/packer/packer/start/plenary.nvim
+	path = nvim/packer/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
 [submodule "nvim/packer/packer/start/popup.nvim"]
-	path = nvim/packer/packer/start/popup.nvim
+	path = nvim/packer/popup.nvim
 	url = https://github.com/nvim-lua/popup.nvim
 [submodule "nvim/packer/packer/start/telescope.nvim"]
-	path = nvim/packer/packer/start/telescope.nvim
+	path = nvim/packer/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim
 [submodule "nvim/packer/packer/start/surround.nvim"]
-	path = nvim/packer/packer/start/surround.nvim
+	path = nvim/packer/surround.nvim
 	url = https://github.com/blackCauldron7/surround.nvim
