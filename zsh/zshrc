@@ -48,6 +48,8 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 #   eval "$(pyenv init -)"
 # fi
 
+eval "$(pyenv init -)"
+
 # alacritty day/night colourscheme toggle
 function reload_nvim_night {
     for SERVER in $(nvr --serverlist); do
