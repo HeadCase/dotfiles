@@ -17,6 +17,7 @@
     ~/.zshrc: zsh/zshrc
     ~/.zprofile: zsh/zprofile
     ~/.oh-my-zsh/themes/spaceship.zsh-theme: zsh/plugins/spaceship-prompt/spaceship.zsh
+    ~/.config/powerline: ~/.pyenv/versions/3.9.6/lib/python3.9/site-packages/powerline
 
 - shell:
   - git submodule sync --recursive
