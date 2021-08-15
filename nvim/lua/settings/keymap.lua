@@ -7,7 +7,7 @@ map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = tr
 map("n", "<lEADER>cf", ":Lspsaga lsp_finder<CR>", { silent = true })
 map("n", "<LEADER>ca", ":Lspsaga code_action<CR>", { silent = true })
 map("v", "<LEADER>ca", ":<C-U>Lspsaga range_code_action<CR>", { silent = true })
-map("n", "<LEADER>K", ":Lspsaga hover_doc<CR>", { silent = true })
+map("n", "K", ":Lspsaga hover_doc<CR>", {noremap = true,  silent = true })
 map("n", "<LEADER>b", '<cmd>lua require("lspsaga.action").smart_scroll_with_saga(-1)<CR>', { silent = true })
 map("n", "<LEADER>f", '<cmd>lua require("lspsaga.action").smart_scroll_with_saga(1)<CR>', { silent = true })
 map("n", "<LEADER>gs", ":Lspsaga signature_help<CR>", { silent = true })
