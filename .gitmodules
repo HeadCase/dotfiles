@@ -75,3 +75,12 @@
 [submodule "nvim/packer/neoscroll.nvim"]
 	path = nvim/packer/neoscroll.nvim
 	url = https://github.com/karb94/neoscroll.nvim
+[submodule "nvim/packer/formatter.nvim"]
+	path = nvim/packer/formatter.nvim
+	url = https://github.com/mhartington/formatter.nvim
+[submodule "nvim/packer/vim-snippets"]
+	path = nvim/packer/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "nvim/packer/ultisnips"]
+	path = nvim/packer/ultisnips
+	url = https://github.com/SirVer/ultisnips/

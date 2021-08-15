@@ -10,6 +10,7 @@ local opt = vim.opt  -- to set options
 g.mapleader = " "
 
 opt.relativenumber = true
+opt.signcolumn = 'yes'
 opt.number = true
 opt.wrap  = true
 opt.expandtab = true
