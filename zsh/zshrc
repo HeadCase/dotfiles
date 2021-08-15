@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 setopt NO_AUTO_PUSHD
 setopt NO_CORRECT
 
-plugins=(git svn osx tmux)
+plugins=(git svn osx tmux pyenv)
 
 
 
@@ -40,15 +40,8 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 # source /usr/share/doc/fzf/examples/completion.zsh
 
 
-# Setup for pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-
-# if command -v pyenv 1>/dev/null 2>&1; then
-#   eval "$(pyenv init -)"
-# fi
-
 eval "$(pyenv init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # alacritty day/night colourscheme toggle
 function reload_nvim_night {
