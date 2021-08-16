@@ -8,49 +8,10 @@
 [submodule "tmux/plugins/tmux-colors-solarized"]
 	path = tmux/plugins/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized
-[submodule "nvim/plugged/ale"]
-	path = nvim/plugged/ale
-	url = https://github.com/dense-analysis/ale
 [submodule "nvim/plugged/iron.nvim"]
 	path = nvim/plugged/iron.nvim
 	url = https://github.com/hkupty/iron.nvim
 	branch = direct-invoke
-[submodule "nvim/plugged/nerdtree"]
-	path = nvim/plugged/nerdtree
-	url = https://github.com/preservim/nerdtree
-[submodule "nvim/plugged/SimpylFold"]
-	path = nvim/plugged/SimpylFold
-	url = https://github.com/tmhedberg/SimpylFold
-[submodule "nvim/plugged/tabular"]
-	path = nvim/plugged/tabular
-	url = https://github.com/godlygeek/tabular
-[submodule "nvim/plugged/tmuxline.vim"]
-	path = nvim/plugged/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim
-[submodule "nvim/plugged/ultisnips"]
-	path = nvim/plugged/ultisnips
-	url = https://github.com/SirVer/ultisnips
-[submodule "nvim/plugged/vim-auto-save"]
-	path = nvim/plugged/vim-auto-save
-	url = https://github.com/907th/vim-auto-save
-[submodule "nvim/plugged/vim-commentary"]
-	path = nvim/plugged/vim-commentary
-	url = https://github.com/tpope/vim-commentary
-[submodule "nvim/plugged/vim-repeat"]
-	path = nvim/plugged/vim-repeat
-	url = https://github.com/tpope/vim-repeat
-[submodule "nvim/plugged/vim-solarized8"]
-	path = nvim/plugged/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8
-[submodule "nvim/plugged/vim-surround"]
-	path = nvim/plugged/vim-surround
-	url = https://github.com/tpope/vim-surround
-[submodule "nvim/plugged/vimtex"]
-	path = nvim/plugged/vimtex
-	url = https://github.com/lervag/vimtex
-[submodule "nvim/plugged/vim-ripple"]
-	path = nvim/plugged/vim-ripple
-	url = https://github.com/urbainvaes/vim-ripple
 [submodule "zsh/plugins/spaceship-prompt"]
 	path = zsh/plugins/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt
@@ -60,24 +21,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "nvim/plugged/vim-snippets"]
-	path = nvim/plugged/vim-snippets
-	url = https://github.com/honza/vim-snippets
-[submodule "nvim/plugged/lightline.vim"]
-	path = nvim/plugged/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
-[submodule "nvim/plugged/coc.nvim"]
-	path = nvim/plugged/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
-[submodule "nvim/plugged/fzf.vim"]
-	path = nvim/plugged/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
-[submodule "nvim/plugged/fzf"]
-	path = nvim/plugged/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "nvim/plugged/vim-polyglot"]
-	path = nvim/plugged/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
 [submodule "tmux/plugins/tmux-net-speed"]
 	path = tmux/plugins/tmux-net-speed
 	url = https://github.com/tmux-plugins/tmux-net-speed
