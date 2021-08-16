@@ -18,7 +18,7 @@ Host muir-ext
 
 Host fourier
   UseKeychain yes
- 	Hostname bionic-fourier
+ 	Hostname bionic-fourier.local
  	IdentityFile ~/.ssh/bastion
 
 Host fourier-ext
@@ -32,7 +32,7 @@ Host fourier-ext
 
 Host unifi
   UseKeychain yes
- 	Hostname xenial-unifi
+ 	Hostname xenial-unifi.local
  	IdentityFile ~/.ssh/bastion
 
 Host unifi-ext
@@ -47,7 +47,7 @@ Host unifi-ext
 Host bastion
 	UseKeychain yes
 	AddKeysToAgent yes
-	Hostname bionic-bastion
+	Hostname bionic-bastion.local
 	User lynn
 	IdentityFile ~/.ssh/bastion
 	Port 231
