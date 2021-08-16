@@ -52,9 +52,9 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ }, 
       \ }
-let g:tmuxline_preset = 'powerline'
-let g:tmuxline_theme = 'lightline'
-autocmd VimEnter * Tmuxline lightline
+" let g:tmuxline_preset = 'powerline'
+" let g:tmuxline_theme = 'lightline'
+" autocmd VimEnter * Tmuxline lightline
 
 " UltiSnips
 let g:UltiSnipsEditSplit= 'horizontal'

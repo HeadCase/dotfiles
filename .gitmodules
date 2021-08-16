@@ -78,3 +78,12 @@
 [submodule "nvim/plugged/vim-polyglot"]
 	path = nvim/plugged/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "tmux/plugins/tmux-net-speed"]
+	path = tmux/plugins/tmux-net-speed
+	url = https://github.com/tmux-plugins/tmux-net-speed
+[submodule "tmux/plugins/tmux-plugin-sysstat"]
+	path = tmux/plugins/tmux-plugin-sysstat
+	url = https://github.com/samoshkin/tmux-plugin-sysstat
+[submodule "tmux/plugins/tmux-prefix-highlight"]
+	path = tmux/plugins/tmux-prefix-highlight
+	url = https://github.com/tmux-plugins/tmux-prefix-highlight
