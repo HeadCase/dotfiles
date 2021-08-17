@@ -33,10 +33,10 @@ map('n', '<LEADER>f', ':Format <CR>', {noremap = true})
 map('n', '<C-N>', ':NvimTreeToggle<CR>', {noremap = true})
 
 -- Completion
-map('i', "<C-space>", "compe#complete()", {expr = true, silent=true, noremap = true})
-map('i', "<CR>", "compe#confirm('<CR>')", {expr = true, silent=true})
-map('i', "<C-e>", "compe#close('<C-e>')", {expr = true, silent=true})
-map('i', "<C-f>", "compe#scroll({'delta': +4})", {expr = true, silent=true})
-map('i', "<C-d>", "compe#scroll({'delta': -4})", {expr = true, silent=true})
+map('i', "<C-f>", 'compe#complete()', {expr = true})
+map('i', "<CR>", "compe#confirm('<CR>')", {expr = true})
+map('i', "<C-e>", "compe#close('<C-e>')", {expr = true})
+map('i', "<C-u>", "compe#scroll({'delta': +4})", {expr = true})
+map('i', "<C-d>", "compe#scroll({'delta': -4})", {expr = true})
 
 
