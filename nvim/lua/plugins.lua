@@ -9,6 +9,10 @@ return require('packer').startup(function()
   use 'sirver/ultisnips'
   use 'honza/vim-snippets'
 
+  -- tpope!
+  use 'tpope/vim-repeat'
+  use 'tpope/vim-surround'
+
   -- LSP and related
   use 'nvim-treesitter/nvim-treesitter'
   use 'neovim/nvim-lspconfig'
@@ -36,12 +40,6 @@ return require('packer').startup(function()
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
       }
-  use {
-  "blackCauldron7/surround.nvim",
-  config = function()
-    require "surround".setup {}
-  end
-  }
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
