@@ -1,5 +1,5 @@
 # local OS config dirs to be ignored on master branch
 **/keys
-**/tmux_resurrect*
+/tmux/resurrect
 **/*DS_Store
 nvim/undo
