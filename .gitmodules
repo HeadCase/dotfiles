@@ -87,3 +87,6 @@
 [submodule "nvim/packer/ultisnips"]
 	path = nvim/packer/ultisnips
 	url = https://github.com/SirVer/ultisnips/
+[submodule "nvim/packer/trouble.nvim"]
+	path = nvim/packer/trouble.nvim
+	url = https://github.com/folke/trouble.nvim

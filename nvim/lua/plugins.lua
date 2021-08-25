@@ -14,6 +14,7 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'kabouzeid/nvim-lspinstall'
   use 'glepnir/lspsaga.nvim'
+  use 'folke/trouble.nvim'
 
   -- Code formatting
   use 'mhartington/formatter.nvim'
