@@ -7,7 +7,6 @@
 
 - link:
     ~/.ssh/config: ssh/config
-    ~/.ssh/bastion: keys/bastion
     ~/.config/nvim: nvim
     ~/.local/share/nvim/site/pack/packer/start: nvim/packer
     ~/.config/alacritty: term

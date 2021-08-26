@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/formatter.nvim"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
@@ -125,22 +129,33 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["surround.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rsurround\frequire\0" },
-    loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/surround.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/trouble.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-repeat"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-snippets"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-surround"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: surround.nvim
-time([[Config for surround.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rsurround\frequire\0", "config", "surround.nvim")
-time([[Config for surround.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
