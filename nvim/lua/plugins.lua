@@ -5,6 +5,10 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- vimscript
+  use 'tpope/vim-surround'
+  use 'tpope/vim-repeat'
+
   -- snippets
   use 'sirver/ultisnips'
   use 'honza/vim-snippets'
@@ -37,12 +41,6 @@ return require('packer').startup(function()
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
       }
-  use {
-  "blackCauldron7/surround.nvim",
-  config = function()
-    require "surround".setup {}
-  end
-  }
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
