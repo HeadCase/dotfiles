@@ -2,3 +2,4 @@
 **/keys
 tmux/resurrect**
 **/*DS_Store
+nvim/undo
