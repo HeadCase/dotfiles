@@ -90,3 +90,9 @@
 [submodule "nvim/packer/trouble.nvim"]
 	path = nvim/packer/trouble.nvim
 	url = https://github.com/folke/trouble.nvim
+[submodule "nvim/packer/vim-surround"]
+	path = nvim/packer/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "nvim/packer/vim-repeat"]
+	path = nvim/packer/vim-repeat
+	url = https://github.com/tpope/vim-repeat

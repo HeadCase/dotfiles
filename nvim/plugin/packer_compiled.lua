@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/gheadley/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -69,78 +69,93 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/formatter.nvim"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
   },
   kommentary = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/kommentary"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/kommentary"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
   },
   ["nvim-compe"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-lspinstall"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim"
-  },
-  ["surround.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rsurround\frequire\0" },
-    loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/surround.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/trouble.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-repeat"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-snippets"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-surround"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: surround.nvim
-time([[Config for surround.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rsurround\frequire\0", "config", "surround.nvim")
-time([[Config for surround.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
