@@ -8,10 +8,6 @@
 [submodule "tmux/plugins/tmux-colors-solarized"]
 	path = tmux/plugins/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized
-[submodule "nvim/plugged/iron.nvim"]
-	path = nvim/plugged/iron.nvim
-	url = https://github.com/hkupty/iron.nvim
-	branch = direct-invoke
 [submodule "zsh/plugins/spaceship-prompt"]
 	path = zsh/plugins/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt
@@ -21,9 +17,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "nvim/plugged/simpylfold"]
-	path = nvim/plugged/simpylfold
-	url = https://github.com/tmhedberg/SimpylFold
 [submodule "nvim/packer/packer/start/kommentary"]
 	path = nvim/packer/kommentary
 	url = https://github.com/b3nj5m1n/kommentary
