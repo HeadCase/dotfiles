@@ -15,8 +15,8 @@ return require('packer').startup(function()
 
   -- LSP and related
   use 'nvim-treesitter/nvim-treesitter'
-  use 'neovim/nvim-lspconfig'
-  use 'kabouzeid/nvim-lspinstall'
+  -- use 'neovim/nvim-lspconfig'
+  -- use 'kabouzeid/nvim-lspinstall'
   use 'glepnir/lspsaga.nvim'
   use 'folke/trouble.nvim'
 
@@ -37,10 +37,10 @@ return require('packer').startup(function()
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'
 }
-  use {
+  --[[ use {
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-      }
+      } ]]
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
