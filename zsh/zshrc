@@ -26,7 +26,6 @@ export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
 
 source ~/.alias
 export BAT_THEME="TwoDark"
-<<<<<<< HEAD
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
