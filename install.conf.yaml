@@ -15,7 +15,6 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc
     ~/.zprofile: zsh/zprofile
-    ~/.oh-my-zsh/themes/spaceship.zsh-theme: zsh/plugins/spaceship-prompt/spaceship.zsh
 
 - shell:
   - git submodule sync --recursive
