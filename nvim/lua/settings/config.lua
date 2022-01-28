@@ -8,11 +8,13 @@ local opt = vim.opt  -- to set options
 -- Global Look and feel (and colour) --
 ---------------------------------------
 g.mapleader = " "
+g.python3_host_prog = '/home/gheadley/.pyenv/versions/nvim3/bin/python3'
 
 opt.relativenumber = true
 opt.number = true
 opt.signcolumn = 'yes:2'
 opt.scrolloff=10
+opt.mouse = 'nv'
 opt.termguicolors = true
 opt.hlsearch = false
 opt.hidden = true

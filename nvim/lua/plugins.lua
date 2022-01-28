@@ -15,16 +15,29 @@ return require('packer').startup(function()
 
   -- LSP and related
   use 'nvim-treesitter/nvim-treesitter'
-  -- use 'neovim/nvim-lspconfig'
-  -- use 'kabouzeid/nvim-lspinstall'
-  use 'glepnir/lspsaga.nvim'
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
+  use {
+    'ray-x/navigator.lua',
+    requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
+  }
+  -- use 'glepnir/lspsaga.nvim'
   use 'folke/trouble.nvim'
 
   -- Code formatting
   use 'mhartington/formatter.nvim'
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Autocomplete
-  use 'hrsh7th/nvim-compe'
+  -- use 'hrsh7th/nvim-compe'
+  use {
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp',
+    'quangnguyen30192/cmp-nvim-ultisnips',
+  }
 
 
   -- Colourscheme
@@ -35,12 +48,15 @@ return require('packer').startup(function()
   use 'karb94/neoscroll.nvim'
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-}
-  --[[ use {
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = function() require'nvim-tree'.setup {} end
+  }
+  use {
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-      } ]]
+      }
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}

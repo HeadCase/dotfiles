@@ -5,21 +5,7 @@ local map = vim.api.nvim_set_keymap
 ------------
 --
 -- LSP 
-map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
-
--- LSP saga
-map("n", "<lEADER>cf", ":Lspsaga lsp_finder<CR>", { silent = true })
-map("n", "<LEADER>ca", ":Lspsaga code_action<CR>", { silent = true })
-map("v", "<LEADER>ca", ":<C-U>Lspsaga range_code_action<CR>", { silent = true })
-map("n", "K", ":Lspsaga hover_doc<CR>", { silent = true })
-map("n", "<LEADER>b", '<cmd>lua require("lspsaga.action").smart_scroll_with_saga(-1)<CR>', { silent = true })
-map("n", "<LEADER>f", '<cmd>lua require("lspsaga.action").smart_scroll_with_saga(1)<CR>', { silent = true })
-map("n", "<LEADER>gs", ":Lspsaga signature_help<CR>", { silent = true })
-map("n", "<LEADER>d", ":Lspsaga show_line_diagnostics<CR>", { noremap=true, silent = true })
-map("n", "]e", ":Lspsaga diagnostic_jump_next<CR>", { silent = true })
-map("n", "[e", ":Lspsaga diagnostic_jump_prev<CR>", { silent = true })
-map("n", "<LEADER>rn", ":Lspsaga rename<CR>", { silent = true })
-map("n", "<LEADER>pd", ":Lspsaga preview_definition<CR>", { silent = true })
+-- map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
 
 -- Telescope
 map('n', '<C-p>', ':Telescope find_files<CR>', {noremap = true})
@@ -42,9 +28,3 @@ map("n", "<leader>xl", "<cmd>Trouble loclist<cr>", {silent = true, noremap = tru
 map("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", {silent = true, noremap = true})
 map("n", "gR", "<cmd>Trouble lsp_references<cr>", {silent = true, noremap = true})
 
--- compe autocomplete
-map('i', "<C-f>", "compe#complete()", {expr = true})
-map('i', "<CR>", "compe#confirm('<CR>')", {expr = true})
-map('i', "<C-e>", "compe#close('<C-e>')", {expr = true})
-map('i', "<C-u>", "compe#scroll({'delta': +4})", {expr = true})
-map('i', "<C-d>", "compe#scroll({'delta': -4})", {expr = true})
