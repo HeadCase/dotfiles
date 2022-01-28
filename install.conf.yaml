@@ -15,6 +15,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc
     ~/.zprofile: zsh/zprofile
+    ~/.zshenv: zsh/zshenv
 
 - shell:
   - git submodule sync --recursive
