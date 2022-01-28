@@ -26,7 +26,16 @@ Host fourier-ext
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
-	Hostname bionic-fourier
+	Hostname 192.168.5.12
+	IdentityFile ~/.ssh/bastion
+	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
+
+Host wg-catterick
+  User wireguard
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	Hostname 192.168.5.80
 	IdentityFile ~/.ssh/bastion
 	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
 
