@@ -9,7 +9,7 @@
     ~/.ssh/config: ssh/config
     ~/.config/nvim: nvim
     ~/.local/share/nvim/site/pack/packer/start: nvim/packer
-    ~/.config/alacritty: term
+    ~/.config/kitty/kitty.conf: term/kitty.conf
     ~/.alias: alias
     ~/.tmux: 
     ~/.tmux.conf: tmux/tmux.conf
