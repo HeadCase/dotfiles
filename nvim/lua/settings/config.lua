@@ -9,6 +9,7 @@ local opt = vim.opt  -- to set options
 ---------------------------------------
 g.mapleader = " "
 g.python3_host_prog = '/home/gheadley/.pyenv/versions/nvim3/bin/python3'
+g.python_host_prog = '/home/gheadley/.pyenv/versions/2.7.18/bin/python'
 
 opt.relativenumber = true
 opt.number = true

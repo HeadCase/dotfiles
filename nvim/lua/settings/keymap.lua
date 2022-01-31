@@ -3,9 +3,6 @@ local map = vim.api.nvim_set_keymap
 ------------
 -- Remaps --
 ------------
---
--- LSP 
--- map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
 
 -- Telescope
 map('n', '<C-p>', ':Telescope find_files<CR>', {noremap = true})
@@ -26,5 +23,5 @@ map("n", "<leader>xw", "<cmd>Trouble lsp_workspace_diagnostics<cr>", {silent = t
 map("n", "<leader>xd", "<cmd>Trouble lsp_document_diagnostics<cr>", {silent = true, noremap = true})
 map("n", "<leader>xl", "<cmd>Trouble loclist<cr>", {silent = true, noremap = true})
 map("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", {silent = true, noremap = true})
-map("n", "gR", "<cmd>Trouble lsp_references<cr>", {silent = true, noremap = true})
-
+--[[ map("n", "gR", "<cmd>Trouble lsp_references<cr>", {silent = true, noremap = true})
+ ]]

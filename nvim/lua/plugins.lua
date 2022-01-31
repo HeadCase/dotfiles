@@ -1,6 +1,3 @@
--- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -21,15 +18,7 @@ return require('packer').startup(function()
     'ray-x/navigator.lua',
     requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
   }
-  -- use 'glepnir/lspsaga.nvim'
-  use 'folke/trouble.nvim'
-
-  -- Code formatting
-  use 'mhartington/formatter.nvim'
-  use 'norcalli/nvim-colorizer.lua'
-
   -- Autocomplete
-  -- use 'hrsh7th/nvim-compe'
   use {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
@@ -38,6 +27,13 @@ return require('packer').startup(function()
     'hrsh7th/nvim-cmp',
     'quangnguyen30192/cmp-nvim-ultisnips',
   }
+  -- More LSP
+  use 'folke/trouble.nvim'
+
+  -- Code formatting
+  use 'mhartington/formatter.nvim'
+  use 'norcalli/nvim-colorizer.lua'
+
 
 
   -- Colourscheme
