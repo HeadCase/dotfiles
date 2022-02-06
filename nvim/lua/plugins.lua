@@ -4,6 +4,7 @@ return require('packer').startup(function()
 
   -- snippets
   use 'L3MON4D3/LuaSnip'
+  use "rafamadriz/friendly-snippets"
 
   -- tpope!
   use 'tpope/vim-repeat'
@@ -29,7 +30,17 @@ return require('packer').startup(function()
   use 'eddyekofo94/gruvbox-flat.nvim'
 
   -- Utilities
-  use 'b3nj5m1n/kommentary'
+  use {'windwp/nvim-autopairs',
+    config = function ()
+      require('nvim-autopairs').setup()
+    end
+  }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
   use 'karb94/neoscroll.nvim'
   use { 'kyazdani42/nvim-tree.lua',
     requires = {

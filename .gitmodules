@@ -190,3 +190,12 @@
 [submodule "nvim/packer/cmp_luasnip"]
 	path = nvim/packer/cmp_luasnip
 	url = https://github.com/saadparwaiz1/cmp_luasnip
+[submodule "nvim/packer/nvim-autopairs"]
+	path = nvim/packer/nvim-autopairs
+	url = https://github.com/windwp/nvim-autopairs
+[submodule "nvim/packer/friendly-snippets"]
+	path = nvim/packer/friendly-snippets
+	url = https://github.com/rafamadriz/friendly-snippets
+[submodule "nvim/packer/Comment.nvim"]
+	path = nvim/packer/Comment.nvim
+	url = https://github.com/numToStr/Comment.nvim
