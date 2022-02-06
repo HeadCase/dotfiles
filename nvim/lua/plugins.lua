@@ -1,31 +1,28 @@
--- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- vimscript
-  use 'tpope/vim-surround'
-  use 'tpope/vim-repeat'
-
   -- snippets
-  use 'sirver/ultisnips'
-  use 'honza/vim-snippets'
+
+  -- tpope!
+  use 'tpope/vim-repeat'
+  use 'tpope/vim-surround'
 
   -- LSP and related
   use 'nvim-treesitter/nvim-treesitter'
   use 'neovim/nvim-lspconfig'
-  use 'kabouzeid/nvim-lspinstall'
-  use 'glepnir/lspsaga.nvim'
-  use 'folke/trouble.nvim'
-
+  -- Autocomplete
+  use {
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp',
+    'quangnguyen30192/cmp-nvim-ultisnips',
+  }
   -- Code formatting
   use 'mhartington/formatter.nvim'
-
-  -- Autocomplete
-  use 'hrsh7th/nvim-compe'
-
+  use 'norcalli/nvim-colorizer.lua'
 
   -- Colourscheme
   use 'eddyekofo94/gruvbox-flat.nvim'
@@ -33,10 +30,12 @@ return require('packer').startup(function()
   -- Utilities
   use 'b3nj5m1n/kommentary'
   use 'karb94/neoscroll.nvim'
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-}
+  use { 'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = function() require'nvim-tree'.setup {} end
+  }
   use {
       'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}

@@ -21,78 +21,166 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "tmux/plugins/tmux-net-speed"]
-	path = tmux/plugins/tmux-net-speed
-	url = https://github.com/tmux-plugins/tmux-net-speed
-[submodule "tmux/plugins/tmux-plugin-sysstat"]
-	path = tmux/plugins/tmux-plugin-sysstat
-	url = https://github.com/samoshkin/tmux-plugin-sysstat
-[submodule "tmux/plugins/tmux-prefix-highlight"]
-	path = tmux/plugins/tmux-prefix-highlight
-	url = https://github.com/tmux-plugins/tmux-prefix-highlight
+[submodule "nvim/plugged/simpylfold"]
+	path = nvim/plugged/simpylfold
+	url = https://github.com/tmhedberg/SimpylFold
 [submodule "nvim/packer/packer/start/kommentary"]
 	path = nvim/packer/kommentary
+	url = https://github.com/b3nj5m1n/kommentary
+  branch = main
+  update = merge
+[submodule "nvim/packer/packer/start/nvim/packer/packer/start/kommentary"]
+	path = nvim/packer/packer/start/nvim/packer/packer/start/kommentary
 	url = https://github.com/b3nj5m1n/kommentary
 [submodule "nvim/packer/packer/start/lspsaga.nvim"]
 	path = nvim/packer/lspsaga.nvim
 	url = https://github.com/glepnir/lspsaga.nvim
+  update = merge
+  branch = main
 [submodule "nvim/packer/packer/start/lualine.nvim"]
 	path = nvim/packer/lualine.nvim
 	url = https://github.com/hoob3rt/lualine.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/nvim-compe"]
 	path = nvim/packer/nvim-compe
 	url = https://github.com/hrsh7th/nvim-compe
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/nvim-lspconfig"]
 	path = nvim/packer/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/nvim-treesitter"]
 	path = nvim/packer/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/nvim-web-devicons"]
 	path = nvim/packer/nvim-web-devicons
 	url = https://github.com/kyazdani42/nvim-web-devicons
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/packer.nvim"]
 	path = nvim/packer/packer.nvim
 	url = https://github.com/wbthomason/packer.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/plenary.nvim"]
 	path = nvim/packer/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/popup.nvim"]
 	path = nvim/packer/popup.nvim
 	url = https://github.com/nvim-lua/popup.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/packer/start/telescope.nvim"]
 	path = nvim/packer/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim
-[submodule "nvim/packer/packer/start/surround.nvim"]
-	path = nvim/packer/surround.nvim
-	url = https://github.com/blackCauldron7/surround.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/gruvbox-flat.nvim"]
 	path = nvim/packer/gruvbox-flat.nvim
 	url = https://github.com/eddyekofo94/gruvbox-flat.nvim
-[submodule "nvim/packer/nvim-lspinstall"]
-	path = nvim/packer/nvim-lspinstall
-	url = https://github.com/kabouzeid/nvim-lspinstall
+  update = merge
+  branch = master
 [submodule "nvim/packer/nvim-tree.lua"]
 	path = nvim/packer/nvim-tree.lua
 	url = https://github.com/kyazdani42/nvim-tree.lua
+  update = merge
+  branch = master
 [submodule "nvim/packer/neoscroll.nvim"]
 	path = nvim/packer/neoscroll.nvim
 	url = https://github.com/karb94/neoscroll.nvim
+  update = merge
+  branch = master
 [submodule "nvim/packer/formatter.nvim"]
 	path = nvim/packer/formatter.nvim
 	url = https://github.com/mhartington/formatter.nvim
+  branch = master
+  update = merge
 [submodule "nvim/packer/vim-snippets"]
 	path = nvim/packer/vim-snippets
 	url = https://github.com/honza/vim-snippets
+  update = merge
+  branch = master
 [submodule "nvim/packer/ultisnips"]
 	path = nvim/packer/ultisnips
-	url = https://github.com/SirVer/ultisnips/
-[submodule "nvim/packer/trouble.nvim"]
-	path = nvim/packer/trouble.nvim
-	url = https://github.com/folke/trouble.nvim
-[submodule "nvim/packer/vim-surround"]
-	path = nvim/packer/vim-surround
-	url = https://github.com/tpope/vim-surround
+  url = https://github.com/SirVer/ultisnips/
+  update = merge
+  branch = master
+[submodule "tmux/plugins/tmux-net-speed"]
+  path = tmux/plugins/tmux-net-speed
+  url = https://github.com/tmux-plugins/tmux-net-speed
+[submodule "tmux/plugins/tmux-plugin-sysstat"]
+  path = tmux/plugins/tmux-plugin-sysstat
+  url = https://github.com/samoshkin/tmux-plugin-sysstat
+[submodule "tmux/plugins/tmux-prefix-highlight"]
+  path = tmux/plugins/tmux-prefix-highlight
+  url = https://github.com/tmux-plugins/tmux-prefix-highlight
 [submodule "nvim/packer/vim-repeat"]
 	path = nvim/packer/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+  update = merge
+  branch = master
+[submodule "nvim/packer/vim-surround"]
+	path = nvim/packer/vim-surround
+	url = https://github.com/tpope/vim-surround
+  update = merge
+  branch = master
+[submodule "nvim/packer/trouble.nvim"]
+	path = nvim/packer/trouble.nvim
+	url = https://github.com/folke/trouble.nvim
+  update = merge
+  branch = main
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "zsh/plugins/zsh-autosuggestions"]
+	path = zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "nvim/packer/nvim-colorizer.lua"]
+	path = nvim/packer/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua
+  update = merge
+  branch = master
+[submodule "nvim/packer/nvim-lsp-installer"]
+	path = nvim/packer/nvim-lsp-installer
+	url = https://github.com/williamboman/nvim-lsp-installer
+  update = merge
+  branch = main
+[submodule "nvim/packer/cmp-buffer"]
+	path = nvim/packer/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer
+  update = merge
+[submodule "nvim/packer/cmp-cmdline"]
+	path = nvim/packer/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline
+  update = merge
+[submodule "nvim/packer/cmp-path"]
+	path = nvim/packer/cmp-path
+	url = https://github.com/hrsh7th/cmp-path
+  update = merge
+[submodule "nvim/packer/cmp-nvim-ultisnips"]
+	path = nvim/packer/cmp-nvim-ultisnips
+  url = https://github.com/quangnguyen30192/cmp-nvim-ultisnips
+  update = merge
+[submodule "nvim/packer/cmp-nvim-lsp"]
+	path = nvim/packer/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp
+  update = merge
+[submodule "nvim/packer/guihua.lua"]
+	path = nvim/packer/guihua.lua
+	url = https://github.com/ray-x/guihua.lua
+  update = merge
+[submodule "nvim/packer/nvim-cmp"]
+	path = nvim/packer/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp
+  update = merge
+[submodule "nvim/packer/navigator.lua"]
+	path = nvim/packer/navigator.lua
+	url = https://github.com/ray-x/navigator.lua
+  update = merge

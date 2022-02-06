@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -69,93 +69,124 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-ultisnips"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
+    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
   ["formatter.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/formatter.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim",
+    url = "https://github.com/eddyekofo94/gruvbox-flat.nvim"
   },
   kommentary = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/kommentary"
-  },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/kommentary",
+    url = "https://github.com/b3nj5m1n/kommentary"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
   },
-  ["nvim-compe"] = {
+  ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
-  },
-  ["nvim-lspinstall"] = {
-    loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ["trouble.nvim"] = {
-    loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/trouble.nvim"
-  },
-  ultisnips = {
-    loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/ultisnips"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-repeat"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-repeat"
-  },
-  ["vim-snippets"] = {
-    loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-snippets"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "/Users/gheadley/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)
