@@ -7,7 +7,6 @@ require('settings.color')
 require('settings.keymap')
 
 -- Package settings
--- require('plugins.completion')
 require('plugins.format')
 require('plugins.lsp')
 require('plugins.lualine')

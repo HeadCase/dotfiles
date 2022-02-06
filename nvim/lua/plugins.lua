@@ -3,6 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- snippets
+  use 'L3MON4D3/LuaSnip'
 
   -- tpope!
   use 'tpope/vim-repeat'
@@ -18,7 +19,7 @@ return require('packer').startup(function()
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
-    'quangnguyen30192/cmp-nvim-ultisnips',
+    'saadparwaiz1/cmp_luasnip',
   }
   -- Code formatting
   use 'mhartington/formatter.nvim'
