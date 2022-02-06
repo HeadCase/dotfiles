@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/kommentary",
     url = "https://github.com/b3nj5m1n/kommentary"
   },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -194,6 +199,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/sirver/ultisnips"
+  },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-completion"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion",
+    url = "https://github.com/kristijanhusak/vim-dadbod-completion"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
   },
   ["vim-repeat"] = {
     loaded = true,

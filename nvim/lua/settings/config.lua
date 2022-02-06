@@ -10,6 +10,7 @@ local opt = vim.opt  -- to set options
 g.mapleader = " "
 g.python3_host_prog = '/home/gheadley/.pyenv/versions/nvim3/bin/python3'
 g.python_host_prog = '/home/gheadley/.pyenv/versions/2.7.18/bin/python'
+g.db_ui_use_nerd_fonts = '1'
 
 opt.relativenumber = true
 opt.number = true
@@ -37,4 +38,4 @@ opt.colorcolumn='80'
 opt.foldmethod='expr'
 opt.foldexpr='nvim_treesitter#foldexpr()'
 
-vim.o.completeopt = "menuone,noselect"
+opt.completeopt = "menu,menuone,noselect"

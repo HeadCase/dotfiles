@@ -33,7 +33,12 @@ return require('packer').startup(function()
   -- Code formatting
   use 'mhartington/formatter.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'onsails/lspkind-nvim'
 
+  -- SQL
+  use "tpope/vim-dadbod"
+  use { "kristijanhusak/vim-dadbod-completion" }
+  use { "kristijanhusak/vim-dadbod-ui" }
 
 
   -- Colourscheme

@@ -1,8 +1,11 @@
 local cmp = require'cmp'
+-- vim.opt.completeopt = {"menu", "menuone", "noselect"}
+--
+local lspkind = require "lspkind"
+lspkind.init()
 
-cmp.setup({
+cmp.setup{
   snippet = {
-    -- REQUIRED - you must specify a snippet engine
     expand = function(args)
       vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
     end,
@@ -21,27 +24,50 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'ultisnips' }, -- For ultisnips users.
-  }, {
     { name = 'buffer' },
-  })
-})
+    { name = 'path'}
+  }),
+  formatting = {
+    -- Youtube: How to set up nice formatting for your sources.
+    format = lspkind.cmp_format {
+      with_text = true,
+      menu = {
+        buffer = "[buf]",
+        nvim_lsp = "[LSP]",
+        path = "[path]",
+        ultisnips = "[snip]",
+      },
+    },
+  },
+  experimental = {
+    native_menu = true,
+    ghost_text = true,
+  },
+}
+
+_ = vim.cmd [[
+  augroup DadbodSql
+    au!
+    autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer { sources = { { name = 'vim-dadbod-completion' } } }
+  augroup END
+]]
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline('/', {
+--[[ cmp.setup.cmdline('/', {
   sources = {
     { name = 'buffer' }
   }
-})
+}) ]]
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(':', {
+--[[ cmp.setup.cmdline(':', {
   sources = cmp.config.sources({
     { name = 'path' }
   }, {
     { name = 'cmdline' }
   })
 })
-
+ ]]
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
