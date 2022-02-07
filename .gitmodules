@@ -184,3 +184,15 @@
 	path = nvim/packer/navigator.lua
 	url = https://github.com/ray-x/navigator.lua
   update = merge
+[submodule "nvim/packer/lspkind-nvim"]
+	path = nvim/packer/lspkind-nvim
+	url = https://github.com/onsails/lspkind-nvim
+[submodule "nvim/packer/vim-dadbod"]
+	path = nvim/packer/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod
+[submodule "nvim/packer/vim-dadbod-completion"]
+	path = nvim/packer/vim-dadbod-completion
+	url = https://github.com/kristijanhusak/vim-dadbod-completion
+[submodule "nvim/packer/vim-dadbod-ui"]
+	path = nvim/packer/vim-dadbod-ui
+	url = https://github.com/kristijanhusak/vim-dadbod-ui
