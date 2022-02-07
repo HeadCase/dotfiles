@@ -3,8 +3,8 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- snippets
-  use 'sirver/ultisnips'
-  use 'honza/vim-snippets'
+  use 'L3MON4D3/LuaSnip'
+  use 'rafamadriz/friendly-snippets'
 
   -- tpope!
   use 'tpope/vim-repeat'
@@ -13,11 +13,6 @@ return require('packer').startup(function()
   -- LSP and related
   use 'nvim-treesitter/nvim-treesitter'
   use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
-  use {
-    'ray-x/navigator.lua',
-    requires = {'ray-x/guihua.lua', run = 'cd lua/fzy && make'}
-  }
   -- Autocomplete
   use {
     'hrsh7th/cmp-nvim-lsp',
@@ -25,10 +20,8 @@ return require('packer').startup(function()
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
-    'quangnguyen30192/cmp-nvim-ultisnips',
+    'saadparwaiz1/cmp_luasnip',
   }
-  -- More LSP
-  use 'folke/trouble.nvim'
 
   -- Code formatting
   use 'mhartington/formatter.nvim'
@@ -45,7 +38,17 @@ return require('packer').startup(function()
   use 'eddyekofo94/gruvbox-flat.nvim'
 
   -- Utilities
-  use 'b3nj5m1n/kommentary'
+  use {'windwp/nvim-autopairs',
+  config = function ()
+    require('nvim-autopairs').setup()
+  end
+  }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
   use 'karb94/neoscroll.nvim'
   use {
     'kyazdani42/nvim-tree.lua',
