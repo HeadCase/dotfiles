@@ -24,3 +24,5 @@ export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
 # Bindings
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
+
+alias luamake=/home/gheadley/src/lua-language-server/3rd/luamake/luamake
