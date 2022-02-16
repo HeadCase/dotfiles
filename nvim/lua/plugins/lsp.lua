@@ -32,7 +32,7 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-local servers = { 'pyright', 'sumneko_lua', 'julials'}
+local servers = { 'pyright', 'sumneko_lua'}
 
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
@@ -45,12 +45,28 @@ for _, lsp in pairs(servers) do
   }
 end
 
+-- Diagnostics
+local signs = {
+	{ name = "DiagnosticSignError", text = "" },
+	{ name = "DiagnosticSignWarn",  text = "" },
+	{ name = "DiagnosticSignHint",  text = "" },
+	{ name = "DiagnosticSignInfo",  text = "" },
+}
 
-
-local has_words_before = function()
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+for _, sign in ipairs(signs) do
+	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
+
+vim.diagnostic.config({
+  virtual_text = false,
+})
+
+
+
+-- local has_words_before = function()
+--   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+--   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+-- end
 
 -- nvim-cmp setup for autocomplete
 local cmp = require'cmp'
@@ -110,8 +126,11 @@ cmp.setup({
       },
     },
   },
+  view = {
+    entries = "native",
+  },
   experimental = {
-    native_menu = true,
+    -- native_menu = true,
     ghost_text = true
   },
 })

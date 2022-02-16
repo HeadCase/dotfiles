@@ -39,6 +39,6 @@ alias diss='~/cloudstation/home/school/MSc/study/MATH5872\ -\ dissertation\ in\ 
 alias dev='~/cloudstation/home/develop/'
 alias datsci='~/cloudstation/home/develop/datsci/'
 
-alias glog='git log --oneline --decorate'
-alias gstat='git status'
-alias gdif='git diff'
+alias gl='git log --oneline --decorate'
+alias gs='git status'
+alias gd='git diff'
