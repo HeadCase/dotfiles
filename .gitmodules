@@ -139,10 +139,6 @@
 	path = nvim/packer/cmp-path
 	url = https://github.com/hrsh7th/cmp-path
   update = merge
-[submodule "nvim/packer/cmp-nvim-ultisnips"]
-	path = nvim/packer/cmp-nvim-ultisnips
-  url = https://github.com/quangnguyen30192/cmp-nvim-ultisnips
-  update = merge
 [submodule "nvim/packer/cmp-nvim-lsp"]
 	path = nvim/packer/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp
