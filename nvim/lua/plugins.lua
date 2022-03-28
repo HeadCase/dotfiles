@@ -4,7 +4,7 @@ return require('packer').startup(function()
 
   -- snippets
   use 'L3MON4D3/LuaSnip'
-  use "rafamadriz/friendly-snippets"
+  use 'rafamadriz/friendly-snippets'
 
   -- tpope!
   use 'tpope/vim-repeat'
@@ -22,18 +22,26 @@ return require('packer').startup(function()
     'hrsh7th/nvim-cmp',
     'saadparwaiz1/cmp_luasnip',
   }
+
   -- Code formatting
   use 'mhartington/formatter.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'onsails/lspkind-nvim'
+
+  -- SQL
+  use "tpope/vim-dadbod"
+  use { "kristijanhusak/vim-dadbod-completion" }
+  use { "kristijanhusak/vim-dadbod-ui" }
+
 
   -- Colourscheme
   use 'eddyekofo94/gruvbox-flat.nvim'
 
   -- Utilities
   use {'windwp/nvim-autopairs',
-    config = function ()
-      require('nvim-autopairs').setup()
-    end
+  config = function ()
+    require('nvim-autopairs').setup()
+  end
   }
   use {
     'numToStr/Comment.nvim',
@@ -42,7 +50,8 @@ return require('packer').startup(function()
     end
   }
   use 'karb94/neoscroll.nvim'
-  use { 'kyazdani42/nvim-tree.lua',
+  use {
+    'kyazdani42/nvim-tree.lua',
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
