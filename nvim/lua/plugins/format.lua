@@ -1,7 +1,7 @@
 -- yapf for python
 local yapfFmt = function()
   return {
-      exe = '~/.pyenv/versions/nvim3/bin/yapf',
+      exe = '/home/gheadley/.pyenv/shims/yapf',
       stdin = true
   }
 end
@@ -9,7 +9,7 @@ end
 -- isort for python
 local isortFmt = function()
   return {
-    exe = '~/.pyenv/versions/nvim3/bin/isort',
+    exe = '/home/gheadley/.pyenv/shims/isort',
     args = {'-'},
     stdin = true,
   }
