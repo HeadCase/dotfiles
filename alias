@@ -14,11 +14,12 @@ alias grep='rg'
 alias du='dust'
 alias find ='fd'
 alias ps='procs'
-alias top='btm'
+alias top='bottom'
 alias cd='z'
 
 alias wtr='curl wttr.in'
 
+alias top=htop
 alias j=jobs
 alias h=history
 alias dirs='dirs -v'
@@ -38,6 +39,6 @@ alias diss='~/cloudstation/home/school/MSc/study/MATH5872\ -\ dissertation\ in\ 
 alias dev='~/cloudstation/home/develop/'
 alias datsci='~/cloudstation/home/develop/datsci/'
 
-alias glog='git log --oneline --decorate'
-alias gstat='git status'
-alias gdif='git diff'
+alias gl='git log --oneline --decorate'
+alias gs='git status'
+alias gd='git diff'
