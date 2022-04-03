@@ -8,11 +8,14 @@ local opt = vim.opt  -- to set options
 -- Global Look and feel (and colour) --
 ---------------------------------------
 g.mapleader = " "
+-- g.python3_host_prog = '/home/gheadley/.pyenv/versions/shims/python3'
+g.python_host_prog = '/home/gheadley/.pyenv/versions/2.7.18/bin/python2.7'
 
 opt.relativenumber = true
 opt.number = true
 opt.signcolumn = 'yes:2'
 opt.scrolloff=10
+opt.mouse = 'nv'
 opt.termguicolors = true
 opt.hlsearch = false
 opt.hidden = true
@@ -34,4 +37,4 @@ opt.colorcolumn='80'
 opt.foldmethod='expr'
 opt.foldexpr='nvim_treesitter#foldexpr()'
 
-vim.o.completeopt = "menuone,noselect"
+opt.completeopt = {"menu","menuone","noselect"}
