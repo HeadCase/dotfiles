@@ -4,41 +4,27 @@
 alias nv='nvim'
 alias vi='nvim'
 alias cat='bat'
-alias v='ls -lAhG'
 alias ls='exa --icons'
 alias l='exa -l --icons --color-scale'
 alias v='l'
-alias lv='exa -la --icons --color-scale'
-alias vt='ls -lAhGt | head -20'
+alias vt='v -T'
+alias vv='exa -la --icons --color-scale'
 alias grep='rg'
 alias du='dust'
 alias find ='fd'
 alias ps='procs'
 alias top='bottom'
 alias cd='z'
-
 alias wtr='curl wttr.in'
-
 alias top=htop
 alias j=jobs
 alias h=history
 alias dirs='dirs -v'
 alias pd='pushd'
 alias ql='qlmanage -p'
-
-alias study='~/cloudstation/home/school/MSc/study/'
-alias pp='~/cloudstation/home/school/MSc/study/COMP5711\ -\ practical\ programming'
-alias ds='~/cloudstation/home/school/MSc/study/COMP5122\ -\ data\ science'
-alias mva='~/cloudstation/home/school/MSc/study/MATH5772\ -\ multivariate\ analysis'
-alias krr='~/cloudstation/home/school/MSc/study/COMP5450\ -\ knowledge\ representation\ and\ reasoning'
-alias bds='~/cloudstation/home/school/MSc/study/COMP5111\ -\ big\ data\ systems'
-alias ai='~/cloudstation/home/school/MSc/study/COMP5623\ -\ artificial\ intelligence'
-alias cs='~/cloudstation/home/school/MSc/study/MATH5747\ -\ learning\ skills\ through\ case\ studies'
-alias bs='~/cloudstation/home/school/MSc/study/MATH5820\ -\ bayesian\ statistics\ and\ causality'
-alias diss='~/cloudstation/home/school/MSc/study/MATH5872\ -\ dissertation\ in\ data\ science\ and\ analytics'
-alias dev='~/cloudstation/home/develop/'
-alias datsci='~/cloudstation/home/develop/datsci/'
-
 alias gl='git log --oneline --decorate'
 alias gs='git status'
 alias gd='git diff'
+
+alias dev='~/cloudstation/home/develop/'
+alias datsci='~/cloudstation/home/develop/datsci/'
