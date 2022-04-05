@@ -8,7 +8,7 @@ local opt = vim.opt  -- to set options
 -- Global Look and feel (and colour) --
 ---------------------------------------
 g.mapleader = " "
-g.python3_host_prog = '/Users/gheadley/.pyenv/versions/nvim3/bin/python'
+-- g.python3_host_prog = '/Users/gheadley/.pyenv/versions/nvim3/bin/python'
 g.python_host_prog = '/Users/gheadley/.pyenv/versions/2.7.18/bin/python2.7'
 
 opt.relativenumber = true
