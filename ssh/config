@@ -1,11 +1,75 @@
 # Need config to automate ssh-agents
 
-Host muir-wall
+Host github.com
+  User git
+  IdentityFile ~/.ssh/bastion
+
+Host wg-lakewood
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
+  User wireguard
+	Hostname 192.168.64.236
 	IdentityFile ~/.ssh/bastion
-	Hostname muir-wall
+
+Host wg-catterick
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User wireguard
+	Hostname 192.168.5.80
+	IdentityFile ~/.ssh/bastion
+
+Host laplace
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User laplace
+	Hostname 192.168.64.237
+	IdentityFile ~/.ssh/bastion
+
+Host tinker
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User gheadley
+	Hostname 192.168.5.55
+	IdentityFile ~/.ssh/bastion
+
+Host fourier
+  UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User gheadley
+	Hostname 192.168.5.12
+	IdentityFile ~/.ssh/bastion
+
+Host fourier-ext
+  UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User gheadley
+	Hostname 192.168.5.12
+	IdentityFile ~/.ssh/bastion
+	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
+
+Host bastion
+  UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	User lynn
+	Hostname 192.168.5.19
+	Port 231
+	IdentityFile ~/.ssh/bastion
+
+Host bastion-ext
+  UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+	User lynn
+	Hostname gheadley.dyndns.org
+	Port 231
+	IdentityFile ~/.ssh/bastion
 
 
 Host muir-ext
@@ -15,58 +79,3 @@ Host muir-ext
 	Hostname muir-wall
 	IdentityFile ~/.ssh/bastion
 	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
-
-Host fourier
-  UseKeychain yes
- 	Hostname bionic-fourier.local
- 	IdentityFile ~/.ssh/bastion
-
-Host fourier-ext
-  User gheadley
-	UseKeychain yes
-	AddKeysToAgent yes
-	ForwardAgent yes
-	Hostname 192.168.5.12
-	IdentityFile ~/.ssh/bastion
-	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
-
-Host wg-catterick
-  User wireguard
-	UseKeychain yes
-	AddKeysToAgent yes
-	ForwardAgent yes
-	Hostname 192.168.5.80
-	IdentityFile ~/.ssh/bastion
-	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
-
-Host unifi
-  UseKeychain yes
- 	Hostname xenial-unifi.local
- 	IdentityFile ~/.ssh/bastion
-
-Host unifi-ext
-  User gheadley
-	UseKeychain yes
-	AddKeysToAgent yes
-	ForwardAgent yes
-	Hostname xenial-unifi
-	IdentityFile ~/.ssh/bastion
-	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
-
-Host bastion
-	UseKeychain yes
-	AddKeysToAgent yes
-	Hostname bionic-bastion.local
-	User lynn
-	IdentityFile ~/.ssh/bastion
-	Port 231
-	ForwardAgent yes
-
-Host bastion-ext
-	UseKeychain yes
-	AddKeysToAgent yes
-	Hostname gheadley.dyndns.org
-	User lynn
-	IdentityFile ~/.ssh/bastion
-	Port 231
-	ForwardAgent yes
