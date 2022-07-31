@@ -6,6 +6,13 @@ local yapfFmt = function()
   }
 end
 
+local blueFmt = function()
+  return {
+      exe = '/Users/gheadley/.pyenv/shims/blue',
+      stdin = true
+  }
+end
+
 -- isort for python
 local isortFmt = function()
   return {
@@ -18,7 +25,11 @@ end
 require('formatter').setup({
   logging = true,
   filetype = {
-    python = {yapfFmt, isortFmt},
+    python = {blueFmt, isortFmt},
+    go = {
+      require('formatter.filetypes.go').gofmt,
+      require('formatter.filetypes.go').goimports,
+    }
     }
 })
 
@@ -26,7 +37,7 @@ vim.api.nvim_exec(
   [[
 augroup FormatAutogroup
   autocmd!
-  autocmd BufWritePost *.py FormatWrite
+  autocmd BufWritePost * FormatWrite
 augroup END
 ]],
   true
