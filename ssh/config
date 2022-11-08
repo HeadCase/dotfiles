@@ -1,6 +1,6 @@
 # Need config to automate ssh-agents
 #
 #
-Host github.com
-  User git
-  IdentityFile ~/.ssh/bastion
+# Host github.com
+#   User git
+#   IdentityFile ~/.ssh/bastion
