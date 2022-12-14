@@ -142,6 +142,9 @@
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/plugins/zsh-completions"]
+	path = zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
 [submodule "nvim/packer/nvim-colorizer.lua"]
 	path = nvim/packer/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
@@ -211,3 +214,7 @@
 [submodule "nvim/packer/vim-dadbod"]
 	path = nvim/packer/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod
+[submodule "zsh/plugins/fast-syntax-highlighting"]
+	path = zsh/plugins/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
+
