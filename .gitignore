@@ -3,3 +3,4 @@
 /tmux/resurrect
 **/*DS_Store
 nvim/undo
+nvim/packer
