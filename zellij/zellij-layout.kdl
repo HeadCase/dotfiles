@@ -1,0 +1,56 @@
+layout {
+    pane_template name="tabbar" {
+        pane {
+            size 1 
+            borderless true
+            plugin location="zellij:tab-bar"
+        }
+    }
+    pane_template name="statusbar" {
+        pane {
+            size 1 
+            borderless true
+            plugin location="zellij:status-bar"
+        }
+    } 
+    tab name="dev" focus=true {
+        tabbar
+        pane {
+            borderless true
+            cwd "/home/gheadley/develop"
+          }
+        statusbar
+    } 
+    tab name="dev2" {
+        tabbar
+        pane {
+            borderless true
+            cwd "/home/gheadley/develop"
+          }
+        statusbar
+    }
+    tab name="dev3" {
+        tabbar
+        pane {
+            borderless true
+            cwd "/home/gheadley/develop"
+          }
+        statusbar
+    }
+    tab name="dev4" {
+        tabbar
+        pane {
+            borderless true
+            cwd "/home/gheadley/develop"
+          }
+        statusbar
+    }
+    tab name="conf" {
+        tabbar
+        pane {
+            borderless true
+            cwd "/home/gheadley/.dotfiles"
+          }
+        statusbar
+    }
+}

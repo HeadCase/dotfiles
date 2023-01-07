@@ -174,3 +174,9 @@
 [submodule "nvim/packer/friendly-snippets"]
 	path = nvim/packer/friendly-snippets
 	url = https://github.com/rafamadriz/friendly-snippets/
+[submodule "zsh/fast-syntax-highlighting"]
+	path = zsh/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
+[submodule "zsh/plugins/zsh-completions"]
+	path = zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions

@@ -6,16 +6,16 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.ssh/config: ssh/config
-    ~/.config/nvim: nvim
-    ~/.local/share/nvim/site/pack/packer/start: nvim/packer
-    ~/.config/kitty/kitty.conf: term/kitty.conf
     ~/.alias: alias
-    ~/.tmux: 
+    ~/.config/kitty/kitty.conf: term/kitty.conf
+    ~/.config/nvim: nvim
+    ~/.config/zellij: zellij
+    ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.zshrc: zsh/zshrc
+    ~/.tmux: 
     ~/.zprofile: zsh/zprofile
     ~/.zshenv: zsh/zshenv
+    ~/.zshrc: zsh/zshrc
 
 - shell:
   - git submodule sync --recursive
