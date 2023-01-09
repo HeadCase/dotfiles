@@ -83,10 +83,10 @@ cmp.setup({
 	},
 	sources = cmp.config.sources({
 		{ name = "cmp_tabnine" },
-		{ name = "nvim_lsp", max_item_count = 5 },
+		{ name = "nvim_lsp", options = { max_item_count = 5 } },
 		{ name = "luasnip" }, -- For luasnip users.
-		{ name = "path", max_item_count = 5 },
-		{ name = "buffer", keyword_length = 5, max_item_count = 5 },
+		{ name = "path", options = { max_item_count = 5 } },
+		{ name = "buffer", options = { keyword_length = 5, max_item_count = 5 } },
 	}),
 	formatting = {
 		format = function(entry, vim_item)
