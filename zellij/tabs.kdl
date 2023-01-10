@@ -1,0 +1,21 @@
+layout {
+    default_tab_template {
+        pane {
+          size 1 
+            borderless true
+            plugin location="zellij:tab-bar"
+        }
+        pane 
+        pane {
+          size 1 
+            borderless true
+            plugin location="zellij:status-bar"
+        }
+      }
+    tab name="dev" focus=true 
+    tab name="ops" 
+    tab name="data" 
+    tab name="shell" 
+    tab name="conf" 
+    tab name="free" 
+}
