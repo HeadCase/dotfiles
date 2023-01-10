@@ -7,6 +7,7 @@
 
 - link:
     ~/.alias: alias
+    ~/.config/bat: bat
     ~/.config/nvim: nvim
     ~/.config/zellij: zellij
     ~/.ssh/bastion: keys/bastion

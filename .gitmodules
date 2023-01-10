@@ -37,71 +37,11 @@
 	url = https://github.com/glepnir/lspsaga.nvim
   update = merge
   branch = main
-[submodule "nvim/packer/packer/start/lualine.nvim"]
-	path = nvim/packer/lualine.nvim
-	url = https://github.com/hoob3rt/lualine.nvim
-  update = merge
-  branch = master
 [submodule "nvim/packer/packer/start/nvim-compe"]
 	path = nvim/packer/nvim-compe
 	url = https://github.com/hrsh7th/nvim-compe
   update = merge
   branch = master
-[submodule "nvim/packer/packer/start/nvim-lspconfig"]
-	path = nvim/packer/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/nvim-treesitter"]
-	path = nvim/packer/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/nvim-web-devicons"]
-	path = nvim/packer/nvim-web-devicons
-	url = https://github.com/kyazdani42/nvim-web-devicons
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/packer.nvim"]
-	path = nvim/packer/packer.nvim
-	url = https://github.com/wbthomason/packer.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/plenary.nvim"]
-	path = nvim/packer/plenary.nvim
-	url = https://github.com/nvim-lua/plenary.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/popup.nvim"]
-	path = nvim/packer/popup.nvim
-	url = https://github.com/nvim-lua/popup.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/packer/start/telescope.nvim"]
-	path = nvim/packer/telescope.nvim
-	url = https://github.com/nvim-telescope/telescope.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/gruvbox-flat.nvim"]
-	path = nvim/packer/gruvbox-flat.nvim
-	url = https://github.com/eddyekofo94/gruvbox-flat.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/nvim-tree.lua"]
-	path = nvim/packer/nvim-tree.lua
-	url = https://github.com/kyazdani42/nvim-tree.lua
-  update = merge
-  branch = master
-[submodule "nvim/packer/neoscroll.nvim"]
-	path = nvim/packer/neoscroll.nvim
-	url = https://github.com/karb94/neoscroll.nvim
-  update = merge
-  branch = master
-[submodule "nvim/packer/formatter.nvim"]
-	path = nvim/packer/formatter.nvim
-	url = https://github.com/mhartington/formatter.nvim
-  branch = master
-  update = merge
 [submodule "nvim/packer/vim-snippets"]
 	path = nvim/packer/vim-snippets
 	url = https://github.com/honza/vim-snippets
@@ -121,16 +61,6 @@
 [submodule "tmux/plugins/tmux-prefix-highlight"]
   path = tmux/plugins/tmux-prefix-highlight
   url = https://github.com/tmux-plugins/tmux-prefix-highlight
-[submodule "nvim/packer/vim-repeat"]
-	path = nvim/packer/vim-repeat
-	url = https://github.com/tpope/vim-repeat
-  update = merge
-  branch = master
-[submodule "nvim/packer/vim-surround"]
-	path = nvim/packer/vim-surround
-	url = https://github.com/tpope/vim-surround
-  update = merge
-  branch = master
 [submodule "nvim/packer/trouble.nvim"]
 	path = nvim/packer/trouble.nvim
 	url = https://github.com/folke/trouble.nvim
@@ -145,75 +75,23 @@
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
-[submodule "nvim/packer/nvim-colorizer.lua"]
-	path = nvim/packer/nvim-colorizer.lua
-	url = https://github.com/norcalli/nvim-colorizer.lua
-  update = merge
-  branch = master
 [submodule "nvim/packer/nvim-lsp-installer"]
 	path = nvim/packer/nvim-lsp-installer
 	url = https://github.com/williamboman/nvim-lsp-installer
   update = merge
   branch = main
-[submodule "nvim/packer/cmp-buffer"]
-	path = nvim/packer/cmp-buffer
-	url = https://github.com/hrsh7th/cmp-buffer
-  update = merge
-[submodule "nvim/packer/cmp-cmdline"]
-	path = nvim/packer/cmp-cmdline
-	url = https://github.com/hrsh7th/cmp-cmdline
-  update = merge
-[submodule "nvim/packer/cmp-path"]
-	path = nvim/packer/cmp-path
-	url = https://github.com/hrsh7th/cmp-path
-  update = merge
 [submodule "nvim/packer/cmp-nvim-ultisnips"]
 	path = nvim/packer/cmp-nvim-ultisnips
   url = https://github.com/quangnguyen30192/cmp-nvim-ultisnips
-  update = merge
-[submodule "nvim/packer/cmp-nvim-lsp"]
-	path = nvim/packer/cmp-nvim-lsp
-	url = https://github.com/hrsh7th/cmp-nvim-lsp
   update = merge
 [submodule "nvim/packer/guihua.lua"]
 	path = nvim/packer/guihua.lua
 	url = https://github.com/ray-x/guihua.lua
   update = merge
-[submodule "nvim/packer/nvim-cmp"]
-	path = nvim/packer/nvim-cmp
-	url = https://github.com/hrsh7th/nvim-cmp
-  update = merge
 [submodule "nvim/packer/navigator.lua"]
 	path = nvim/packer/navigator.lua
 	url = https://github.com/ray-x/navigator.lua
   update = merge
-[submodule "nvim/packer/LuaSnip"]
-	path = nvim/packer/LuaSnip
-	url = https://github.com/L3MON4D3/LuaSnip
-[submodule "nvim/packer/cmp_luasnip"]
-	path = nvim/packer/cmp_luasnip
-	url = https://github.com/saadparwaiz1/cmp_luasnip
-[submodule "nvim/packer/nvim-autopairs"]
-	path = nvim/packer/nvim-autopairs
-	url = https://github.com/windwp/nvim-autopairs
-[submodule "nvim/packer/friendly-snippets"]
-	path = nvim/packer/friendly-snippets
-	url = https://github.com/rafamadriz/friendly-snippets
-[submodule "nvim/packer/Comment.nvim"]
-	path = nvim/packer/Comment.nvim
-	url = https://github.com/numToStr/Comment.nvim
-[submodule "nvim/packer/lspkind-nvim"]
-	path = nvim/packer/lspkind-nvim
-	url = https://github.com/onsails/lspkind-nvim
-[submodule "nvim/packer/vim-dadbod-completion"]
-	path = nvim/packer/vim-dadbod-completion
-	url = https://github.com/kristijanhusak/vim-dadbod-completion
-[submodule "nvim/packer/vim-dadbod-ui"]
-	path = nvim/packer/vim-dadbod-ui
-	url = https://github.com/kristijanhusak/vim-dadbod-ui
-[submodule "nvim/packer/vim-dadbod"]
-	path = nvim/packer/vim-dadbod
-	url = https://github.com/tpope/vim-dadbod
 [submodule "zsh/plugins/fast-syntax-highlighting"]
 	path = zsh/plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma-continuum/fast-syntax-highlighting

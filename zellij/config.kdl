@@ -398,7 +398,7 @@ themes {
     gruvbox-material {
         fg "#d4be98"
         bg "#282828"
-        black "#141617"
+        black "#282828"
         red "#ea6962"
         green "#a9b665"
         yellow "#d8a657"
