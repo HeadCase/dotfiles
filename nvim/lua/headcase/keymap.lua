@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "<C-l>", "<c-g>u<Esc>[s1z=`]a<c-g>u")
 
 -- Preserve yank in top register always (only visual)
-vim.keymap.set("v", "p", '"_dP')
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- Yank into system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])

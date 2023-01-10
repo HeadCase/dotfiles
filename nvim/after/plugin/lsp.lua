@@ -3,7 +3,7 @@ local buf = vim.lsp.buf
 
 vim.keymap.set("n", "<leader>e", function()
 	diag.open_float()
-end)
+end, {desc = 'LSP [e]rror float'})
 vim.keymap.set("n", "[d", function()
 	diag.goto_prev()
 end)
@@ -12,7 +12,7 @@ vim.keymap.set("n", "]d", function()
 end)
 vim.keymap.set("n", "<leader>q", function()
 	vim.diagnostic.setloclist()
-end)
+end, {desc = 'Add LSP diagnostics to [Q]F list'})
 
 -- Use an on_attach function to only map the following keys after the language
 -- server attaches to the current buffer
@@ -63,6 +63,35 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	})
 end
+
+-- Lua LSP configuration for vim commands
+-- Make runtime files discoverable to the server
+local runtime_path = vim.split(package.path, ";")
+table.insert(runtime_path, "lua/?.lua")
+table.insert(runtime_path, "lua/?/init.lua")
+
+require("lspconfig").sumneko_lua.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		Lua = {
+			runtime = {
+        -- Tell the language server which version of Lua you're using (most
+        -- likely LuaJIT)
+				version = "LuaJIT",
+				-- Setup your lua path
+				path = runtime_path,
+			},
+			diagnostics = {
+				globals = { "vim" },
+			},
+			workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+			-- Do not send telemetry data containing a randomized but unique identifier
+			telemetry = { enable = false },
+		},
+	},
+})
+
 
 -- Diagnostics
 local signs = {

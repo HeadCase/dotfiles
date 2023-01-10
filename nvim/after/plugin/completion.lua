@@ -81,13 +81,15 @@ cmp.setup({
 			end
 		end, { "i", "s" }),
 	},
-	sources = cmp.config.sources({
-		{ name = "cmp_tabnine" },
-		{ name = "nvim_lsp", options = { max_item_count = 5 } },
-		{ name = "luasnip" }, -- For luasnip users.
-		{ name = "path", options = { max_item_count = 5 } },
-		{ name = "buffer", options = { keyword_length = 5, max_item_count = 5 } },
-	}),
+	sources = {
+		{ name = "nvim_lsp", max_item_count = 10 },
+		{ name = "nvim_lsp_signature_help" },
+		{ name = "path", option = { max_item_count = 5 } },
+		{ name = "buffer", keyword_length = 5, max_item_count = 5 },
+		{ name = "cmp_tabnine", max_item_count = 10 },
+		{ name = "nvim_lua" },
+		{ name = "luasnip", max_item_count = 3 }, -- For luasnip users.
+	},
 	formatting = {
 		format = function(entry, vim_item)
 			vim_item.kind = lspkind.presets.default[vim_item.kind]
@@ -102,4 +104,14 @@ cmp.setup({
 			return vim_item
 		end,
 	},
+})
+
+-- `:` cmdline setup.
+cmp.setup.cmdline(":", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
+		{ name = "cmdline" },
+	}),
 })

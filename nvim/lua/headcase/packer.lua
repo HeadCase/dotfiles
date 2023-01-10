@@ -48,6 +48,8 @@ return require("packer").startup(function(use)
 	-- Autocomplete
 	use({
 		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-nvim-lsp-signature-help",
+		"hrsh7th/cmp-nvim-lua",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
@@ -60,7 +62,7 @@ return require("packer").startup(function(use)
 	use("eddyekofo94/gruvbox-flat.nvim")
 
 	-- Utilities!
-  use("echasnovski/mini.align")
+	use("echasnovski/mini.align")
 	use("tpope/vim-fugitive")
 	use("tpope/vim-repeat")
 	use("kylechui/nvim-surround")
