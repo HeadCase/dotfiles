@@ -13,6 +13,8 @@
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux: 
+    ~/.oh-my-zsh/custom/plugins: zsh/plugins
+    ~/.oh-my-zsh/custom/fast-syntax-highlighting: zsh/fast-syntax-highlighting/
     ~/.zprofile: zsh/zprofile
     ~/.zshenv: zsh/zshenv
     ~/.zshrc: zsh/zshrc
