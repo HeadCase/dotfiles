@@ -61,9 +61,12 @@ return require("packer").startup(function(use)
 	-- Colourscheme
 	use("eddyekofo94/gruvbox-flat.nvim")
 
+	-- Git
+	use("lewis6991/gitsigns.nvim")
+	use("tpope/vim-fugitive")
+
 	-- Utilities!
 	use("echasnovski/mini.align")
-	use("tpope/vim-fugitive")
 	use("tpope/vim-repeat")
 	use("kylechui/nvim-surround")
 	use("mhartington/formatter.nvim")
