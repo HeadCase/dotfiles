@@ -8,7 +8,7 @@ local locw = vim.wo -- to set options
 -- Global Look and feel (and colour) --
 ---------------------------------------
 -- g.python3_host_prog = '/home/gheadley/.pyenv/versions/shims/python3'
-g.python_host_prog = "/home/gheadley/.pyenv/versions/2.7.18/bin/python2.7"
+g.python_host_prog = "/Users/gheadley/.pyenv/versions/2.7.18/bin/python2.7"
 
 locw.spell = true
 locb.spelllang = "en_gb"
@@ -32,7 +32,7 @@ opt.softtabstop = 2
 opt.swapfile = false
 opt.tabstop = 2
 opt.termguicolors = true
-opt.undodir = "/home/gheadley/.config/nvim/undo"
+opt.undodir = "/Users/gheadley/.config/nvim/undo"
 opt.undofile = true
 opt.undolevels = 700 -- keep 700 lines of undo
 opt.wrap = false

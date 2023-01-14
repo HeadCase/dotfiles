@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>f", ":Format <CR>")
 -- isort for python
 local isortFmt = function()
 	return {
-		exe = "/home/gheadley/.pyenv/shims/isort",
+		exe = "/Users/gheadley/.pyenv/shims/isort",
 		args = { "-" },
 		stdin = true,
 	}
