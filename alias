@@ -35,3 +35,7 @@ alias gpu='git push'
 alias gc='git commit'
 alias jqm="jq 'del(.ecgConfiguration,.imuConfiguration,.sensor.imuConfiguration, .sensor.ecgConfiguration)'"
 
+alias bathelp='bat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}

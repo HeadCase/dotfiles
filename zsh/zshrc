@@ -4,11 +4,13 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 export PYENV_ROOT="$HOME/.pyenv"
-PATH="$PATH:$PYENV_ROOT/bin:$HOME/.local:$HOME/.local/bin/kitty:/usr/local/go/bin:$HOME/go/bin/:/usr/local/cuda-11.7/bin"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init - --no-rehash)"
+fi
+PATH="$PATH:$HOME/.local:/usr/local/go/bin:$HOME/go/bin/"
 export PATH
 
 . "$HOME/.cargo/env"
-
 setopt NO_AUTO_PUSHD
 setopt NO_CORRECT
 plugins=(
@@ -33,6 +35,8 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export BAT_THEME="gruvbox-flat"
 export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 
 # Bindings
 bindkey "^P" up-line-or-beginning-search
