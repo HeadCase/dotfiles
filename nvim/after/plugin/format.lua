@@ -55,3 +55,9 @@ augroup END
 ]],
 	true
 )
+vim.api.nvim_exec(
+	[[
+autocmd BufWritePre *.go lua vim.lsp.buf.format({ async = false })
+]],
+	true
+)

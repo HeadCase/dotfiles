@@ -13,6 +13,9 @@ end)
 vim.keymap.set("n", "<leader>q", function()
 	vim.diagnostic.setloclist()
 end, {desc = 'Add LSP diagnostics to [Q]F list'})
+vim.keymap.set("n", "<leader>F", function()
+  vim.lsp.buf.format({async=false})
+end, {desc = 'LSP [e]rror float'})
 
 -- Use an on_attach function to only map the following keys after the language
 -- server attaches to the current buffer
