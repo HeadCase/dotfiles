@@ -36,21 +36,13 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export BAT_THEME="gruvbox-flat"
 export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export VISUAL="nvim"
+export EDITOR="$VISUAL"
 
 
 # Bindings
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
-
-
-# click autocompletes
-if (( $+commands[pucktools] )); then
-  . ~/.pucktools-complete.zsh
-fi
-if (( $+commands[consumer-db] )); then
-  . ~/.consumer-db-complete.zsh
-fi
-
 
 
 # The following lines were added by compinstall
