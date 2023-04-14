@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["gruvbox-flat.nvim"] = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim",
@@ -232,6 +237,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["tabnine-nvim"] = {
+    loaded = true,
+    path = "/home/gheadley/.local/share/nvim/site/pack/packer/start/tabnine-nvim",
+    url = "https://github.com/codota/tabnine-nvim"
   },
   ["telescope-lsp-handlers.nvim"] = {
     loaded = true,

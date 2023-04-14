@@ -49,9 +49,8 @@ local servers = {
 	"gopls",
 	"jsonls",
 	"pyright",
-	"r_language_server",
-	"sumneko_lua",
-	"texlab",
+  "rust-analyzer",
+	"lua_ls",
 	"yamlls",
 }
 require("mason").setup()
@@ -70,7 +69,7 @@ local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-require("lspconfig").sumneko_lua.setup({
+require("lspconfig").lua_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {

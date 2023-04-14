@@ -4,21 +4,15 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.dotfiles/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 export PYENV_ROOT="$HOME/.pyenv"
-PATH="$PATH:$PYENV_ROOT/bin:$HOME/.local:/usr/local/go/bin:$HOME/go/bin/"
+PATH="$PATH:$HOME/.local/bin"
 export PATH
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 . "$HOME/.cargo/env"
 
 setopt NO_AUTO_PUSHD
 setopt NO_CORRECT
 plugins=(
-  git 
-  tmux 
-  pyenv 
+  git
   zsh-autosuggestions 
   zsh-completions
 )
@@ -30,40 +24,15 @@ source ~/.alias
 # Plugins 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval "$(/home/gheadley/.local/share/rtx/bin/rtx activate -s zsh)"
 
 # Exports
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export BAT_THEME="gruvbox-flat"
 export MANPATH=/usr/local/share/man:/usr/share/man:$MANPATH
 
 # Bindings
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
-
-# click autocompletes
-if (( $+commands[pucktools] )); then
-  . ~/.pucktools-complete.zsh
-fi
-if (( $+commands[consumer-db] )); then
-  . ~/.consumer-db-complete.zsh
-fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/gheadley/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/gheadley/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/gheadley/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/gheadley/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/gheadley/.zshrc'
@@ -81,3 +50,4 @@ function zr () { zellij run --name "$*" -- zsh -ic "$*";}
 function zrf () { zellij run --name "$*" --floating -- zsh -ic "$*";}
 function ze () { zellij edit "$*";}
 function zef () { zellij edit --floating "$*";}
+

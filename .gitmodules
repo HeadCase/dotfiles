@@ -2,22 +2,10 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "tmux/plugins/tmux-sensible"]
-	path = tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible
-[submodule "tmux/plugins/tmux-colors-solarized"]
-	path = tmux/plugins/tmux-colors-solarized
-	url = https://github.com/seebi/tmux-colors-solarized
 [submodule "nvim/plugged/iron.nvim"]
 	path = nvim/plugged/iron.nvim
 	url = https://github.com/hkupty/iron.nvim
 	branch = direct-invoke
-[submodule "tmux/plugins/tmux-resurrect"]
-	path = tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect
-[submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
 [submodule "nvim/plugged/simpylfold"]
 	path = nvim/plugged/simpylfold
 	url = https://github.com/tmhedberg/SimpylFold
@@ -94,15 +82,6 @@
 	url = https://github.com/mhartington/formatter.nvim
   branch = master
   update = merge
-[submodule "tmux/plugins/tmux-net-speed"]
-  path = tmux/plugins/tmux-net-speed
-  url = https://github.com/tmux-plugins/tmux-net-speed
-[submodule "tmux/plugins/tmux-plugin-sysstat"]
-  path = tmux/plugins/tmux-plugin-sysstat
-  url = https://github.com/samoshkin/tmux-plugin-sysstat
-[submodule "tmux/plugins/tmux-prefix-highlight"]
-  path = tmux/plugins/tmux-prefix-highlight
-  url = https://github.com/tmux-plugins/tmux-prefix-highlight
 [submodule "nvim/packer/vim-repeat"]
 	path = nvim/packer/vim-repeat
 	url = https://github.com/tpope/vim-repeat
