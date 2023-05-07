@@ -1,6 +1,5 @@
 # local OS config dirs to be ignored on master branch
-**/keys
-/tmux/resurrect
 **/*DS_Store
 nvim/undo
 nvim/packer
+.luarc.json
