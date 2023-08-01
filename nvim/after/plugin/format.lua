@@ -31,6 +31,15 @@ local bashFmt = function()
 	}
 end
 
+-- rust
+-- function M.rustfmt()
+--   return {
+--     exe = "rustfmt",
+--     args = { "--edition 2021" },
+--     stdin = true,
+--   }
+-- end
+
 require("formatter").setup({
 	logging = true,
 	filetype = {
@@ -42,6 +51,9 @@ require("formatter").setup({
 		c = {
 			require("formatter.filetypes.c").clangformat,
 		},
+    rust = {
+			require("formatter.filetypes.rust").rustfmt,
+    }
 	},
 })
 

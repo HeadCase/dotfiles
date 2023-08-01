@@ -66,6 +66,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-fugitive")
 
 	-- Utilities!
+  use("untitled-ai/jupyter_ascending.vim")
 	use("echasnovski/mini.align")
 	use("tpope/vim-repeat")
 	use("kylechui/nvim-surround")

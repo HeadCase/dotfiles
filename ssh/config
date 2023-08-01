@@ -4,6 +4,13 @@ Host github.com
   User git
   IdentityFile ~/.ssh/bastion
 
+Host lightsail
+	UseKeychain yes
+	AddKeysToAgent yes
+  User ubuntu
+	Hostname 3.11.12.26
+	IdentityFile ~/.ssh/aws
+
 Host wg-lakewood
 	UseKeychain yes
 	AddKeysToAgent yes
@@ -18,6 +25,22 @@ Host wg-catterick
 	ForwardAgent yes
   User wireguard
 	Hostname 192.168.5.80
+	IdentityFile ~/.ssh/bastion
+
+Host pihole
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User vagrant
+	Hostname 192.168.5.11
+	IdentityFile ~/.ssh/bastion
+
+Host turing
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User gheadley
+	Hostname 192.168.5.15
 	IdentityFile ~/.ssh/bastion
 
 Host laplace
@@ -72,10 +95,10 @@ Host bastion-ext
 	IdentityFile ~/.ssh/bastion
 
 
-Host muir-ext
+Host muir-wall
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
-	Hostname muir-wall
+	Hostname 192.168.5.71
+  User gheadley
 	IdentityFile ~/.ssh/bastion
-	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p

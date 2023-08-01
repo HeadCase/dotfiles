@@ -10,6 +10,7 @@
     ~/.config/bat: bat
     ~/.config/nvim: nvim
     ~/.config/zellij: zellij
+    ~/.config/zathura/zathurarc: config/zathurarc
     ~/.ssh/bastion: keys/bastion
     ~/.ssh/config: ssh/config
     ~/.wezterm.lua: term/wezterm.lua
