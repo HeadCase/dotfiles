@@ -1,80 +1,108 @@
+-- [[ Configure Treesitter ]]
+-- See `:help nvim-treesitter`
+-- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
+-- vim.defer_fn(function()
 require("nvim-treesitter.configs").setup({
-	-- Modules and its options go here
-	ensure_installed = {
-		"bash",
-		"c",
-		"cmake",
-		"json",
-		"lua",
-		"make",
-		"markdown",
-		"python",
-		"rst",
-		"rust",
-		"yaml",
-	},
-	highlight = { enable = true, additional_vim_regex_highlighting = false },
-	rainbow = {
-		enable = true,
-		extended_mode = true,
-	},
-	textobjects = {
-		select = {
-			enable = true,
+  -- Add languages to be installed here that you want installed for treesitter
+  ensure_installed = {
+              "bash",
+              "cmake",
+              "cpp",
+              "go",
+              "html",
+              "javascript",
+              "json",
+              "lua",
+              "make",
+              "markdown",
+              "python",
+              "rst",
+              "rust",
+              "vim",
+              "vimdoc",
+              "yaml",
+  },
 
-			-- Automatically jump forward to textobj, similar to targets.vim
-			lookahead = true,
+  -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
+  auto_install = false,
 
-			keymaps = {
-				["af"] = "@function.outer",
-				["if"] = "@function.inner",
-				["ac"] = "@class.outer",
-				["ic"] = { query = "@class.inner" },
-			},
-			-- You can choose the select mode (default is charwise 'v')
-			selection_modes = {
-				["@parameter.outer"] = "v", -- charwise
-				["@function.outer"] = "V", -- linewise
-				["@class.outer"] = "<c-v>", -- blockwise
-			},
-			include_surrounding_whitespace = false,
-		},
-		move = {
-			enable = true,
-			set_jumps = true, -- whether to set jumps in the jumplist
-			goto_next_start = {
-				["]m"] = "@function.outer",
-				["]]"] = { query = "@class.outer", desc = "Next class start" },
-			},
-			goto_next_end = {
-				["]M"] = "@function.outer",
-				["]["] = "@class.outer",
-			},
-			goto_previous_start = {
-				["[m"] = "@function.outer",
-				["[["] = "@class.outer",
-			},
-			goto_previous_end = {
-				["[M"] = "@function.outer",
-				["[]"] = "@class.outer",
-			},
-		},
-		swap = {
-			enable = true,
-			swap_next = {
-				["<leader>a"] = "@parameter.inner",
-			},
-			swap_previous = {
-				["<leader>A"] = "@parameter.inner",
-			},
-		},
-		lsp_interop = {
-			enable = true,
-			border = "none",
-			peek_definition_code = {
-				["<leader>df"] = "@function.outer",
-				["<leader>dF"] = "@class.outer",
-			},
-		},
-	},
+      highlight = { enable = true, additional_vim_regex_highlighting = false },
+  -- highlight = { enable = true },
+  indent = { enable = true },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<c-space>",
+      node_incremental = "<c-space>",
+      scope_incremental = "<c-s>",
+      node_decremental = "<M-space>",
+    },
+  },
+      rainbow = {
+              enable = true,
+              extended_mode = true,
+      },
+  textobjects = {
+    move = {
+      enable = true,
+      set_jumps = true, -- whether to set jumps in the jumplist
+      goto_next_start = {
+        ["]m"] = "@function.outer",
+        ["]]"] = "@class.outer",
+      },
+      goto_next_end = {
+        ["]M"] = "@function.outer",
+        ["]["] = "@class.outer",
+      },
+      goto_previous_start = {
+        ["[m"] = "@function.outer",
+        ["[["] = "@class.outer",
+      },
+      goto_previous_end = {
+        ["[M"] = "@function.outer",
+        ["[]"] = "@class.outer",
+      },
+    },
+    swap = {
+      enable = true,
+      swap_next = {
+        ["<leader>a"] = "@parameter.inner",
+      },
+      swap_previous = {
+        ["<leader>A"] = "@parameter.inner",
+      },
+    },
+    select = {
+      enable = true,
+      lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["aa"] = "@parameter.outer",
+        ["ia"] = "@parameter.inner",
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        ["ic"] = "@class.inner",
+      },
+    },
+              lsp_interop = {
+                      enable = true,
+                      border = "none",
+                      peek_definition_code = {
+                              ["<leader>df"] = "@function.outer",
+                              ["<leader>dF"] = "@class.outer",
+                      },
+              },
+  },
 })
+-- end, 0)
+
+local ts_repeat_move = require("nvim-treesitter.textobjects.repeatable_move")
+-- Repeat movement with ; and ,
+-- ensure ; goes forward and , goes backward regardless of the last direction
+vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move_next)
+vim.keymap.set({ "n", "x", "o" }, ",", ts_repeat_move.repeat_last_move_previous)
+vim.keymap.set({ "n", "x", "o" }, "f", ts_repeat_move.builtin_f)
+vim.keymap.set({ "n", "x", "o" }, "F", ts_repeat_move.builtin_F)
+vim.keymap.set({ "n", "x", "o" }, "t", ts_repeat_move.builtin_t)
+vim.keymap.set({ "n", "x", "o" }, "T", ts_repeat_move.builtin_T)

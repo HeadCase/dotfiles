@@ -1,5 +1,0 @@
-require("mini.align").setup({})
-require("nvim-surround").setup({})
-require("nvim-autopairs").setup({})
-require("Comment").setup({})
-require("luasnip.loaders.from_vscode").lazy_load()

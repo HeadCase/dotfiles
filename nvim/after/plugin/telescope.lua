@@ -1,9 +1,18 @@
-local builtin = require("telescope.builtin")
 
-require("telescope").load_extension("harpoon")
-require("telescope").load_extension("lsp_handlers")
+local builtin = require("telescope.builtin")
+-- require("telescope").load_extension("harpoon")
+-- require("telescope").load_extension("lsp_handlers")
+--
+-- [[ Configure Telescope ]]
+-- See `:help telescope` and `:help telescope.setup()`
 require("telescope").setup({
 	defaults = {
+		mappings = {
+			i = {
+				["<C-u>"] = false,
+				["<C-d>"] = false,
+			},
+		},
 		layout_strategy = "vertical",
 		layout_config = {
 			vertical = { mirror = true },
@@ -11,23 +20,25 @@ require("telescope").setup({
 	},
 })
 
--- Keymaps
-vim.keymap.set("n", "<C-p>", function()
-	builtin.find_files()
-end, { desc = "Ctrl-P Hangover" })
-vim.keymap.set("n", "<C-b>", function()
-	builtin.buffers()
-end, { desc = "Ctrl-P Hangover for [b]uffers" })
-vim.keymap.set("n", "<leader>?", function()
-	builtin.oldfiles()
-end, { desc = "[?] Find recent files" })
-vim.keymap.set("n", "<leader>sp", function()
-	builtin.git_files()
-end, { desc = "[s]earch [p]roject (git)" })
-vim.keymap.set("n", "<leader>sg", function()
-	builtin.live_grep()
-end, { desc = "[s]earch [g]rep" })
-vim.keymap.set("n", "<leader>sh", function()
-	builtin.help_tags()
-end, { desc = "[s]search [h]elp" })
+-- See `:help telescope.builtin`
+vim.keymap.set("n", "<leader>?", builtin.oldfiles, { desc = "[?] Find recently opened files" })
+vim.keymap.set("n", "<leader><space>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+vim.keymap.set("n", "<leader>/", function()
+	-- You can pass additional configuration to telescope to change theme, layout, etc.
+	builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+		winblend = 10,
+		previewer = false,
+	}))
+end, { desc = "[/] Fuzzily search in current buffer" })
 
+vim.keymap.set("n", "<leader>gf", builtin.git_files, { desc = "Search [G]it [F]iles" })
+vim.keymap.set("n", "<leader>sf", builtin.find_files, { desc = "[S]earch [F]iles" })
+vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
+vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
+vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "[S]earch by [G]rep" })
+vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
+vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
+
+-- Keymaps
+-- vim.keymap.set("n", "<C-p>", function() builtin.find_files() end, { desc = "Ctrl-P Hangover" })
+-- vim.keymap.set("n", "<C-b>", function() builtin.buffers() end, { desc = "Ctrl-P Hangover for [b]uffers" })
