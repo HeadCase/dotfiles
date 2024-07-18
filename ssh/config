@@ -1,8 +1,7 @@
 # Need config to automate ssh-agents
 
-Host github.com
-  User git
-  IdentityFile ~/.ssh/bastion
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 Host lightsail
 	UseKeychain yes
@@ -17,31 +16,27 @@ Host wg-lakewood
 	ForwardAgent yes
   User wireguard
 	Hostname 192.168.64.236
-	IdentityFile ~/.ssh/bastion
 
 Host wg-catterick
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User wireguard
-	Hostname 192.168.5.80
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.80
 
 Host pihole
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User vagrant
-	Hostname 192.168.5.11
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.11
 
 Host turing
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User gheadley
-	Hostname 192.168.5.15
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.15
 
 Host laplace
 	UseKeychain yes
@@ -49,31 +44,27 @@ Host laplace
 	ForwardAgent yes
   User laplace
 	Hostname 192.168.64.237
-	IdentityFile ~/.ssh/bastion
 
 Host tinker
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User gheadley
-	Hostname 192.168.5.55
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.55
 
 Host fourier
   UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User gheadley
-	Hostname 192.168.5.12
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.12
 
 Host fourier-ext
   UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
   User gheadley
-	Hostname 192.168.5.12
-	IdentityFile ~/.ssh/bastion
+	Hostname 192.168.19.12
 	ProxyCommand ssh -A -p 231 lynn@gheadley.dyndns.org -W %h:%p
 
 Host bastion
@@ -81,9 +72,8 @@ Host bastion
 	AddKeysToAgent yes
 	ForwardAgent yes
 	User lynn
-	Hostname 192.168.5.19
+	Hostname 192.168.19.19
 	Port 231
-	IdentityFile ~/.ssh/bastion
 
 Host bastion-ext
   UseKeychain yes
@@ -92,13 +82,11 @@ Host bastion-ext
 	User lynn
 	Hostname gheadley.dyndns.org
 	Port 231
-	IdentityFile ~/.ssh/bastion
 
 
 Host muir-wall
 	UseKeychain yes
 	AddKeysToAgent yes
 	ForwardAgent yes
-	Hostname 192.168.5.71
+	Hostname 192.168.19.71
   User gheadley
-	IdentityFile ~/.ssh/bastion

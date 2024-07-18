@@ -1,51 +1,43 @@
--- Vanilla neovim configurations
-local g = vim.g -- a table to access global variables
-local opt = vim.opt -- to set options
-local locb = vim.bo -- to set options
-local locw = vim.wo -- to set options
+-- Set <space> as the leader key
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
----------------------------------------
--- Global Look and feel (and colour) --
----------------------------------------
--- g.python3_host_prog = '/home/gheadley/.pyenv/versions/shims/python3'
-g.python_host_prog = "/Users/gheadley/.pyenv/versions/2.7.18/bin/python2.7"
+vim.bo.spelllang = "en_gb"
+vim.opt.autowrite = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.completeopt = "menuone,noselect"
+vim.opt.hidden = true
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true
+vim.opt.incsearch = true
+vim.opt.mouse = "a"
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 10
+vim.opt.shiftwidth = 2
+vim.opt.signcolumn = "yes"
+vim.opt.smartcase = true
+vim.opt.softtabstop = 2
+vim.opt.tabstop = 2
+vim.opt.termguicolors = true
+vim.opt.textwidth = 100
+vim.opt.undodir = "/Users/gheadley/.config/nvim/undo"
+vim.opt.undofile = true
+vim.opt.updatetime = 250
+vim.wo.number = true
+vim.wo.signcolumn = "yes"
+vim.wo.spell = true
 
-locw.spell = true
-locb.spelllang = "en_gb"
-opt.autowrite = true
-opt.colorcolumn = "80"
-opt.expandtab = true
-opt.hidden = true
-opt.history = 700 -- keep 700 lines of command line history
-opt.hlsearch = false
-opt.incsearch = true
-opt.mouse = "nv"
-opt.number = true
-opt.relativenumber = true
-opt.scrolloff = 10
-opt.shiftwidth = 2
-opt.signcolumn = "yes"
-opt.signcolumn = "yes:2"
-opt.smartindent = true
-opt.smarttab = true
-opt.softtabstop = 2
-opt.swapfile = false
-opt.tabstop = 2
-opt.termguicolors = true
-opt.undodir = "/Users/gheadley/.config/nvim/undo"
-opt.undofile = true
-opt.undolevels = 700 -- keep 700 lines of undo
-opt.wrap = false
+-- vim.opt.breakindent = true
+-- vim.opt.colorcolumn = "80"
+-- vim.opt.completeopt = { "menu", "menuone", "noselect" }
+-- vim.opt.expandtab = true
+-- vim.opt.history = 700 -- keep 700 lines of command line history
+-- vim.opt.mouse = "nv"
+-- vim.opt.number = true
+-- vim.opt.signcolumn = "yes:2"
+-- vim.opt.smartindent = true
+-- vim.opt.smarttab = true
+-- vim.opt.swapfile = false
+-- vim.opt.timeoutlen = 300
+-- vim.opt.wrap = false
 
-opt.completeopt = { "menu", "menuone", "noselect" }
-
--- [[ Highlight on yank ]]
--- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
-vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank()
-	end,
-	group = highlight_group,
-	pattern = "*",
-})
