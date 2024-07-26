@@ -1,12 +1,13 @@
 keybinds clear-defaults=true {
     normal {
-        bind "Ctrl g" { SwitchToMode "locked"; }
-        bind "Ctrl y" { SwitchToMode "pane"; }
-        bind "Ctrl x" { SwitchToMode "resize"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
-        bind "Ctrl h" { SwitchToMode "scroll"; }
-        bind "Ctrl s" { SwitchToMode "session"; }
-        bind "Ctrl q" { Quit; }
+        bind "Alt g" { SwitchToMode "locked"; }
+        bind "Alt p" { SwitchToMode "pane"; }
+        bind "Alt r" { SwitchToMode "resize"; }
+        bind "Alt t" { SwitchToMode "tab"; }
+        bind "Alt s" { SwitchToMode "scroll"; }
+        bind "Alt o" { SwitchToMode "session"; }
+        bind "Alt m" { SwitchToMode "move"; }
+        bind "Alt q" { Quit; }
         bind "Alt 1" { GoToTab 1; SwitchToMode "normal"; }
         bind "Alt 2" { GoToTab 2; SwitchToMode "normal"; }
         bind "Alt 3" { GoToTab 3; SwitchToMode "normal"; }
@@ -26,7 +27,7 @@ keybinds clear-defaults=true {
         bind "Alt -" { Resize "Decrease"; }
     }
     locked {
-        bind "Ctrl g" { SwitchToMode "normal"; }
+        bind "Alt g" { SwitchToMode "normal"; }
     }
     pane {
         bind "Ctrl g" { SwitchToMode "locked"; }
@@ -276,7 +277,7 @@ pane_frames false
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "gruvbox-material"
+theme "tokyonight_storm"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -407,6 +408,21 @@ themes {
         cyan "#89b482"
         white "#f2e5bc"
         orange "#e78a4e"
+    }
+    tokyonight_storm {
+    fg "#c0caf5"
+    bg "#292e42"
+    // Black should match the terminal background color
+    // This ensures the top and bottom bars are transparent
+    black "#24283b"
+    red "#f7768e"
+    green "#9ece6a"
+    yellow "#e0af68"
+    blue "#7aa2f7"
+    magenta "#bb9af7"
+    cyan "#7dcfff"
+    white "#a9b1d6"
+    orange "#ff9e64"
     }
 }     
 // if &background ==# 'dark'
