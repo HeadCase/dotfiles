@@ -80,7 +80,6 @@ require("mason-lspconfig").setup()
 local servers = {
   bashls = {},
   jsonls = {},
-  pyright = {},
   rust_analyzer = {
     ["rust-analyzer"] = {
       imports = {
