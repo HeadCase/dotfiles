@@ -4,7 +4,7 @@ return {
     formatters_by_ft = {
       json = { "prettier" },
       markdown = { "mdformat" },
-      python = { "isort", "blue" },
+      -- python = { "isort", "blue" },
     },
   },
 }
