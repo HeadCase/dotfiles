@@ -45,6 +45,13 @@ Host turing
   User gheadley
 	Hostname 192.168.19.15
 
+Host hertz
+	UseKeychain yes
+	AddKeysToAgent yes
+	ForwardAgent yes
+  User gheadley
+	Hostname 192.168.19.100
+
 Host laplace
 	UseKeychain yes
 	AddKeysToAgent yes
