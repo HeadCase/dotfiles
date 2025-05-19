@@ -8,7 +8,7 @@ return {
 			zsh = { "beautysh" },
 			toml = { "taplo" },
 			python = { "docformatter", lsp_format = "first" },
-			-- python = { "isort", "blue" },
+			javascript = { "prettierd" },
 		},
 	},
 }
