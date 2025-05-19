@@ -4,4 +4,4 @@
 
 -- Prepend mise shims to PATH
 -- vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
-vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/mise/installs/python/3.12/bin/python3"
+-- vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/mise/installs/python/3.12/bin/python3"

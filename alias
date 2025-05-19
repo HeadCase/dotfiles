@@ -34,6 +34,7 @@ alias gpla='git pull --all'
 alias gpu='git push'
 alias gc='git commit'
 alias jqm="jq 'del(.ecgConfiguration,.imuConfiguration,.sensor.imuConfiguration, .sensor.ecgConfiguration)'"
+alias cz='chezmoi'
 
 alias bathelp='bat --plain --language=help'
 help() {

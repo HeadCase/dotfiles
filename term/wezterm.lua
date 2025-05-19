@@ -57,4 +57,5 @@ return {
 		-- inactive_titlebar_bg = "#282828",
 	},
 	audible_bell = "Disabled",
+	enable_scroll_bar = false, -- Disables the scroll bar
 }
